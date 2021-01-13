@@ -1,0 +1,6 @@
+
+[user]
+	name = Loup Dallier
+	email = loup.dallier@epita.fr
+[pull]
+	rebase = false
