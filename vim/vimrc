@@ -1,0 +1,74 @@
+if empty(glob("~/.vim/autoload/plug.vim"))
+    " Ensure all needed directories exist
+    execute '!mkdir -p ~/.vim/plugged'
+    execute '!mkdir -p ~/.vim/autoload'
+    " Download the actual plugin manager
+    execute '!curl -fLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+endif
+
+call plug#begin()
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
+
+set undodir=$XDG_DATA_HOME/vim/undo
+set viewdir=$XDG_DATA_HOME/vim/view
+set viminfo+='1000,n$XDG_DATA_HOME/vim/viminfo
+set runtimepath+=$XDG_CONFIG_HOME/vim,$VIMRUNTIME,$XDG_CONFIG_HOME/vim/after
+
+filetype plugin indent on
+set encoding=utf-8
+
+set autoread
+set autowrite
+
+" Disable backup and swapfile
+set nobackup
+set noswapfile
+
+" Strange behavior when not set
+set term=xterm-256color
+
+" Smart backsapces
+set backspace=eol,indent,start
+
+set scrolloff=5
+
+" Set numbers on the left
+set number
+set relativenumber
+
+set laststatus=2
+
+set path+=**
+set wildmenu
+
+" Number of chars per line and red column
+set textwidth=79
+set cc=+1
+
+" Style of non printable chars
+set list
+set listchars=tab:>─,eol:¬,trail:\ ,nbsp:¤
+
+set mouse=a
+
+" Indentation settings
+set tabstop=8
+set shiftwidth=4
+set softtabstop=-1
+set expandtab
+set smarttab
+set autoindent
+
+" Splits open on right or below
+set splitbelow
+set splitright
+
+let $PAGER=''
+
+" Theme airline plugin
+let g:airline_theme='powerlineish'
+let g:airline#extensions#tabline#enabled=1
