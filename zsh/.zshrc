@@ -81,6 +81,7 @@ autoload -U compinit && compinit
 
 setopt globdots
 setopt extendedglob
+setopt hist_ignore_all_dups
 
 source $ZSH/oh-my-zsh.sh
 
