@@ -1,3160 +1,596 @@
-: 1608344187:0;fg
-: 1608344199:0;grep "first_shell_cmd" src/*/*.c
-: 1608344212:0;fg
-: 1608344332:0;make clean
-: 1608344334:0;make
-: 1608344339:0;fg
-: 1608344471:0;make
-: 1608344479:0;fg
-: 1608344489:0;pytest
-: 1608344494:0;make check
-: 1608344506:0;gst
-: 1608344512:0;git add src/parser/parser.h
-: 1608344517:0;git commit
-: 1608344564:0;git push
-: 1608344600:0;git rebase master
-: 1608344602:0;gst
-: 1608344604:0;fg
-: 1608344623:0;git rebase --abort
-: 1608344625:0;gst
-: 1608348435:0;man autorandr
-: 1608348456:0;autorandr --save external-left
-: 1608348465:0;autorandr
-: 1608348484:0;autorandr -l dual-screen
-: 1608348495:0;autorandr -l external-left
-: 1608348499:0;man autorandr
-: 1608348529:0;autorandr -l dual-screen --dry-run
-: 1608348547:0;fg
-: 1608348554:0;:q
-: 1608349325:0;xrandr
-: 1608349333:0;autorandr
-: 1608349346:0;autorandr -l external-left
-: 1608349544:0;xrandr
-: 1608349835:0;xrandr --output HDMI1 --rate 144.00
-: 1608349838:0;xrandr
-: 1608349925:0;alacritty -v
-: 1608349971:0;autorandr -l dual-screen
-: 1608349987:0;alacritty -v
-: 1608350173:0;:q
-: 1608350184:0;autorandr
-: 1608350186:0;l
-: 1608350190:0;l .config
-: 1608350195:0;cd .config/autorandr/
-: 1608350196:0;l
-: 1608350201:0;l dual-screen
-: 1608350217:0;mv dual-screen left-dual-screen
-: 1608350226:0;mv external-left external
-: 1608350231:0;cd external
-: 1608350231:0;l
-: 1608350233:0;cat config
-: 1608350238:0;cat setup
-: 1608350250:0;autorandr -l external --dry-run
-: 1608350261:0;autorandr
-: 1608350305:0;xrandr --output eDP1 --auto --output HDMI1 --right-of eDP1
-: 1608350323:0;autorandr --save right-dual-screen
-: 1608350344:0;autorandr -l external
-: 1608350717:0;autorandr -l right-dual-screen
-: 1608350772:0;autorandr -l external
-: 1608350896:0;:q
-: 1608397651:0;autorandr -l external
-: 1608397693:0;startx .config/X11/xinitrc
-: 1608398335:0;bash
-: 1608398343:0;bash --posix
-: 1608401803:0;echo $0
-: 1608401803:0;echo $1
-: 1608401803:0;echoi $2
-: 1608401803:0;echo $2
-: 1608401803:0;l
-: 1608401803:0;ls
-: 1608401803:0;exit
-: 1608398550:0;man echo
-: 1608398760:0;bash --posix
-: 1608401803:0;echo $
-: 1608401803:0;echo $$
-: 1608401803:0;exit
-: 1608399088:0;bash --posix
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $RANDOM
-: 1608401803:0;echo $; echo yolo)
-: 1608401803:0;xit
-: 1608401803:0;exit
-: 1608400097:0;cd Documents/projects/42
-: 1608400099:0;cd Documents/projects/42sh
-: 1608400101:0;ls
-: 1608400105:0;vim src/parser
-: 1608400114:0;make clean
-: 1608400117:0;vim src/parser
-: 1608400402:0;make
-: 1608400408:0;fg
-: 1608400507:0;./configure
-: 1608400514:0;make
-: 1608400518:0;make clena
-: 1608400520:0;make clean
-: 1608400521:0;make
-: 1608400526:0;pytest
-: 1608400570:0;. venv/bin/activate
-: 1608400574:0;pytest
-: 1608400577:0;l
-: 1608400592:0;cp ~/Downloads/42sh-2023-1.9.1-conftest.py ./conftest.py
-: 1608400594:0;pytest
-: 1608400602:0;vim conftest.py
-: 1608400620:0;pytest
-: 1608400625:0;make check
-: 1608400650:0;make clean
-: 1608400651:0;fg
-: 1608400828:0;make
-: 1608400835:0;fg
-: 1608400867:0;make
-: 1608400870:0;fg
-: 1608400908:0;make
-: 1608400910:0;fg
-: 1608400941:0;make
-: 1608400947:0;fg
-: 1608400975:0;make
-: 1608400979:0;make clean
-: 1608400981:0;make
-: 1608400985:0;pytest
-: 1608400994:0;make check
-: 1608401027:0;fg
-: 1608401158:0;make
-: 1608401160:0;fg
-: 1608401174:0;make
-: 1608401178:0;pytest
-: 1608401181:0;make check
-: 1608401184:0;fg
-: 1608401291:0;htop
-: 1608401595:0;xrandr
-: 1608401632:0;xrandr --output eDP1 --auto --output DP1 --right-of eDP1 --auto
-: 1608401669:0;cd .config/autorandr
-: 1608401671:0;l
-: 1608401691:0;cd 
-: 1608401696:0;mkdir test
-: 1608401712:0;mkdir test[1-9]
-: 1608401721:0;mkdir test{1-9}
-: 1608401722:0;l
-: 1608401737:0;rm test\{1-9\}
-: 1608401743:0;rmdir test\{1-9\}
-: 1608401751:0;cd test
-: 1608401755:0;mkdir test1
-: 1608401779:0;mkdir test2 test3 test4 test5 test6 test7 test8 test9 
-: 1608401786:0;mv * *-H
-: 1608401788:0;l
-: 1608401794:0;rmdir *
-: 1608401796:0;cd ../
-: 1608401798:0;rmdir te
-: 1608401800:0;rmdir test
-: 1608401803:0;:q
-: 1608401810:0;cd .config/autorandr
-: 1608401817:0;mv external external-H
-: 1608401823:0;mv left-dual-screen-H
-: 1608401831:0;mv left-dual-screen left-dual-screen-H
-: 1608401837:0;mv right-dual-screen right-dual-screen-H
-: 1608402036:0;mv single-screen single-screen
-: 1608402043:0;mv single-screen single-screen-H
-: 1608402044:0;l
-: 1608402773:0;autorandr -l external-H
-: 1608402784:0;:q
-: 1608402845:0;fg
-: 1608402889:0;make
-: 1608402891:0;fg
-: 1608402910:0;make
-: 1608402914:0;pytest
-: 1608402919:0;make check
-: 1608402924:0;fg
-: 1608403028:0;make
-: 1608403029:0;fg
-: 1608403052:0;make
-: 1608403055:0;pytest
-: 1608403058:0;make checl
-: 1608403061:0;make check
-: 1608403066:0;make clena
-: 1608403069:0;make clean
-: 1608403070:0;make
-: 1608403076:0;pytest
-: 1608403082:0;make check
-: 1608403092:0;fg
-: 1608403290:0;make
-: 1608403294:0;pytest
-: 1608403297:0;make check
-: 1608403300:0;fg
-: 1608403404:0;make check
-: 1608403456:0;fg
-: 1608403498:0;make check
-: 1608403502:0;pytest
-: 1608403504:0;fg
-: 1608403845:0;make
-: 1608403851:0;make clean
-: 1608403856:0;make
-: 1608403884:0;mv src/parser/parse_compund_list.c src/parser/parse_compound_list.c
-: 1608403886:0;make
-: 1608403888:0;pytest
-: 1608403892:0;make check
-: 1608403903:0;fg
-: 1608404011:0;make
-: 1608404018:0;make check
-: 1608404022:0;pytest
-: 1608404024:0;fg
-: 1608404273:0;make
-: 1608404276:0;pytest
-: 1608404284:0;make check
-: 1608404286:0;fg
-: 1608404419:0;make
-: 1608404422:0;pytest
-: 1608404425:0;make checl
-: 1608404428:0;make clean
-: 1608404430:0;make
-: 1608404435:0;make check
-: 1608404453:0;fg
-: 1608404469:0;rm src/parser/parser.c
-: 1608404478:0;make clean
-: 1608404480:0;gst
-: 1608404486:0;tree src/parser
-: 1608404492:0;tree src
-: 1608404795:0;fg
-: 1608404879:0;l
-: 1608404908:0;cat ~/Documents/coolstyle
-: 1608404995:0;gst
-: 1608405006:0;git add Makefile.am src/parser/parser.c
-: 1608405008:0;gst
-: 1608405021:0;clang-format -i src/*/*.c
-: 1608405024:0;gst
-: 1608405043:0;clang-format -i src/*/*.h
-: 1608405044:0;gst
-: 1608405056:0;git add src/eval/eval.c src/main/42sh.c
-: 1608405056:0;gst
-: 1608405068:0;git add src/parser/parse_*
-: 1608405070:0;gst
-: 1608405114:0;cp ~/Downloads/pre-commit-config.yaml.bck ./.pre-commit-config.yaml
-: 1608405120:0;git commit
-: 1608405142:0;chmod +x ~/Documents/coolstyle
-: 1608405145:0;git commit
-: 1608405234:0;neofetch
-: 1608406241:0;fg
-: 1608406296:0;gst
-: 1608406322:0;cp .pre-commit-config.yaml .pre-commit-config.yaml.bck
-: 1608406331:0;vim .pre-commit-config.yaml
-: 1608406339:0;gst
-: 1608406346:0;git commit
-: 1608406388:0;gst
-: 1608406391:0;gloga
-: 1608406400:0;gcm
-: 1608406403:0;git pull
-: 1608406415:0;git switch refacto_parser
-: 1608406419:0;git rebase master
-: 1608406421:0;gst
-: 1608406424:0;fg
-: 1608406431:0;l
-: 1608406435:0;tree src/parser
-: 1608406443:0;fg
-: 1608406461:0;gst
-: 1608406468:0;rm src/parser/parser.c
-: 1608406470:0;gst
-: 1608406476:0;git add src/parser/parser.c
-: 1608406488:0;git rebase --continue
-: 1608406493:0;gst
-: 1608406500:0;fg
-: 1608406589:0;gst
-: 1608406593:0;git add src/eval/eval.c 
-: 1608406596:0;fg
-: 1608406653:0;git add src/main/42sh.c
-: 1608406658:0;gst
-: 1608406666:0;git rebase --continue
-: 1608406669:0;gst
-: 1608406691:0;tree src/parser
-: 1608406698:0;git push
-: 1608406705:0;git pull
-: 1608406709:0;gst
-: 1608406718:0;rm src/parser/parser.c
-: 1608406726:0;cat src/parser/parser.h
-: 1608406728:0;fg
-: 1608406783:0;make
-: 1608406789:0;pytest
-: 1608406793:0;make checl
-: 1608406798:0;make check
-: 1608406807:0;gst
-: 1608406818:0;git add src/parser/parser.c
-: 1608406819:0;gst
-: 1608406827:0;git add src/parser/parser.h
-: 1608406830:0;git add Makefile.am
-: 1608406832:0;gst
-: 1608406847:0;git commit
-: 1608406853:0;gst
-: 1608406856:0;git push
-: 1608406934:0;gst
-: 1608408592:0;fg
-: 1608408672:0;cp .pre-commit-config.yaml.bck .pre-commit-config.yaml
-: 1608408675:0;gst
-: 1608408685:0;git commit
-: 1608408695:0;fg
-: 1608413036:0;make
-: 1608413038:0;fg
-: 1608413046:0;make
-: 1608413048:0;fg
-: 1608413405:0;make
-: 1608413410:0;make check
-: 1608413413:0;pytest
-: 1608413416:0;fg
-: 1608413454:0;gst
-: 1608413462:0;cat .pre-commit-config.yaml.bck
-: 1608413465:0;cat .pre-commit-config.yaml
-: 1608413469:0;rm .pre-commit-config.yaml.bck
-: 1608413471:0;gst
-: 1608413475:0;git add src/parser/parse_and_or.c
-: 1608413478:0;gst
-: 1608413479:0;fg
-: 1608413496:0;clang-format -i src/parser/parse_and_or.c
-: 1608413497:0;gst
-: 1608413503:0;git add src/parser/parse_and_or.c
-: 1608413505:0;gst
-: 1608413508:0;fg
-: 1608413607:0;git commit
-: 1608413647:0;tree src
-: 1608413651:0;make clean
-: 1608413653:0;tree src
-: 1608413658:0;fg
-: 1608413883:0;clang-format -i src/parser/parse_command.c
-: 1608413884:0;fg
-: 1608413922:0;make
-: 1608413927:0;pytest
-: 1608413931:0;make check
-: 1608413941:0;fg
-: 1608414023:0;make check
-: 1608414027:0;pytest
-: 1608414029:0;fg
-: 1608414056:0;make
-: 1608414059:0;pytest
-: 1608414062:0;make check
-: 1608414065:0;fg
-: 1608414068:0;gst
-: 1608414072:0;fg
-: 1608414688:0;make
-: 1608414690:0;pytest
-: 1608414693:0;make check
-: 1608414696:0;fg
-: 1608414809:0;make check
-: 1608414811:0;fg
-: 1608414816:0;make check
-: 1608414819:0;fg
-: 1608414824:0;make check
-: 1608414826:0;fg
-: 1608415026:0;make
-: 1608415030:0;fg
-: 1608415059:0;make
-: 1608415065:0;fg
-: 1608415078:0;make
-: 1608415082:0;make clean
-: 1608415083:0;make
-: 1608415088:0;fg
-: 1608415104:0;make
-: 1608415107:0;fg
-: 1608415132:0;make
-: 1608415145:0;fg
-: 1608415160:0;make
-: 1608415164:0;fg
-: 1608415169:0;make
-: 1608415172:0;fg
-: 1608415184:0;make
-: 1608415186:0;fg
-: 1608415198:0;make
-: 1608415200:0;fg
-: 1608415208:0;make
-: 1608415210:0;fg
-: 1608415216:0;make
-: 1608415219:0;pytest
-: 1608415224:0;make check
-: 1608415233:0;fg
-: 1608415272:0;gst
-: 1608415289:0;clang-format -i src/*/*.c
-: 1608415291:0;clang-format -i src/*/*.h
-: 1608415302:0;clang-format -i tests/*.c
-: 1608415303:0;gst
-: 1608415309:0;fg
-: 1608415663:0;make
-: 1608415665:0;pytest
-: 1608415668:0;make check
-: 1608415672:0;fg
-: 1608416432:0;make
-: 1608416434:0;pytest
-: 1608416437:0;make check
-: 1608416439:0;fg
-: 1608417078:0;make
-: 1608417080:0;fg
-: 1608417098:0;make
-: 1608417101:0;pytest
-: 1608417108:0;make check
-: 1608417110:0;fg
-: 1608418855:0;gst
-: 1608419157:0;fg
-: 1608420950:0;man srand
-: 1608421148:0;l ../
-: 1608421153:0;cd ../
-: 1608421716:0;cd 42sh
-: 1608421719:0;gst
-: 1608421726:0;fg
-: 1608422575:0;make
-: 1608422580:0;fg
-: 1608422796:0;make
-: 1608422798:0;pytest
-: 1608422800:0;make check
-: 1608422803:0;fg
-: 1608423363:0;make
-: 1608423366:0;fg
-: 1608423374:0;make
-: 1608423377:0;pytest
-: 1608423380:0;make check
-: 1608423382:0;fg
-: 1608423513:0;gst
-: 1608423528:0;tree src/parser
-: 1608423531:0;make clean
-: 1608423532:0;tree src/parser
-: 1608423538:0;gst
-: 1608423624:0;git add src/parser/parse_command.c src/parser/parse_compound_list.c src/parser/parse_funcdec.c src/parser/parse_pipeline.c tests/parser_test.c
-: 1608423625:0;gst
-: 1608423630:0;git commit
-: 1608423656:0;git commit --no-check
-: 1608423664:0;git commit -nocheck
-: 1608423692:0;git commit --no-verify
-: 1608423717:0;gst
-: 1608423720:0;git push
-: 1608423759:0;gst
-: 1608423764:0;tree src/parser
-: 1608423794:0;fg
-: 1608424039:0;alias gloga
-: 1608424512:0;cat .bashrc
-: 1608424539:0;cd Downloads
-: 1608424542:0;l
-: 1608424565:0;vim bashrc
-: 1608424624:0;l
-: 1608424628:0;rm bashrc
-: 1608424630:0;l
-: 1608424834:0;rm bashrc
-: 1608424836:0;:q
-: 1608424846:0;fg
-: 1608425809:0;make
-: 1608425813:0;pytest
-: 1608425816:0;make check
-: 1608425825:0;fg
-: 1608426113:0;ls ~
-: 1608426121:0;ls ~-
-: 1608426126:0;ls ~+
-: 1608426135:0;ls
-: 1608426167:0;cd
-: 1608426171:0;ls ~+
-: 1608426176:0;cd ~+
-: 1608426177:0;l
-: 1608426181:0;cd ~-
-: 1608426183:0;l
-: 1608426188:0;ls ~-
-: 1608426193:0;cd -
-: 1608426197:0;cd -2
-: 1608426201:0;cd 42sh
-: 1608426201:0;l
-: 1608426202:0;fg
-: 1608428272:0;make
-: 1608428274:0;fg
-: 1608428298:0;make
-: 1608428302:0;fg
-: 1608428315:0;make
-: 1608428319:0;fg
-: 1608428327:0;make
-: 1608428329:0;pytest
-: 1608428332:0;make check
-: 1608428334:0;fg
-: 1608428426:0;make
-: 1608428428:0;pytest
-: 1608428431:0;make check
-: 1608428436:0;make clean
-: 1608428438:0;make check
-: 1608428502:0;fg
-: 1608428511:0;tree src/parser
-: 1608428515:0;make clean
-: 1608428516:0;tree src/parser
-: 1608428520:0;fg
-: 1608430852:0;echo $(function hello_world () { echo hello world; }; hello_world;)
-: 1608430871:0;bash --posix
-: 1608460234:0;exit
-: 1608430883:0;l
-: 1608430886:0;bash
-: 1608430891:0;echo $(function hello_world () { echo hello world; }; hello_world;)
-: 1608430896:0;bash
-: 1608431023:0;fg
-: 1608431913:0;sudo pacman -Syu
-: 1608431933:0;yay -Syu --devel
-: 1608432403:0;fg
-: 1608432846:0;make
-: 1608432871:0;fg
-: 1608432880:0;make
-: 1608432883:0;pytest
-: 1608432886:0;make check
-: 1608432896:0;fg
-: 1608432916:0;gst
-: 1608432923:0;tree src/parser
-: 1608432927:0;make clean
-: 1608432929:0;tree src/parser
-: 1608432949:0;gst
-: 1608432952:0;cat .pre-commit-config.yaml
-: 1608432958:0;git add -u
-: 1608432961:0;git commit
-: 1608432995:0;clang-format -i src/*/*.c
-: 1608432999:0;git add -u
-: 1608433001:0;git commit
-: 1608433023:0;git commit --no-verify
-: 1608433046:0;gst
-: 1608433053:0;git push
-: 1608433150:0;git switch master
-: 1608433152:0;git pull
-: 1608433218:0;git switch refacto_parser
-: 1608434589:0;git pull
-: 1608434706:0;gcm
-: 1608434709:0;git pull
-: 1608434740:0;gloga
-: 1608436894:0;git pull
-: 1608436902:0;git branch
-: 1608437097:0;git checkout -b refacto_check
-: 1608437107:0;clang-format -i src/*/*.c
-: 1608437109:0;gst
-: 1608437120:0;git add -u
-: 1608437122:0;git commit
-: 1608437133:0;fg
-: 1608437143:0;vim src/eval/alias.c
-: 1608437166:0;git add -u
-: 1608437170:0;git commit
-: 1608437181:0;vim src/eval/unalias.c
-: 1608437188:0;git add -u
-: 1608437191:0;pytest
-: 1608437197:0;make clean
-: 1608437199:0;make
-: 1608437205:0;pytest
-: 1608437219:0;make clean
-: 1608437222:0;make check
-: 1608437238:0;make clean
-: 1608437243:0;git commit
-: 1608437535:0;vim src/lexer/lexing.c
-: 1608437855:0;gst
-: 1608437863:0;git pull
-: 1608437902:0;git branch --set-upstream-to=origin/refacto_check refacto_check
-: 1608437921:0;git switch mater
-: 1608437924:0;git switch master
-: 1608437927:0;git pull
-: 1608437968:0;gst
-: 1608437995:0;git restore --staged src/eval/alias.c src/eval/vars_and_quote.c
-: 1608437997:0;git pull
-: 1608438002:0;gst
-: 1608438014:0;git restore src/eval/alias.c src/eval/vars_and_quote.c
-: 1608438016:0;gst
-: 1608438018:0;git pull
-: 1608438029:0;gst
-: 1608438035:0;make
-: 1608438053:0;git switch refacto_check
-: 1608438055:0;make
-: 1608438065:0;make clean
-: 1608438066:0;gst
-: 1608438069:0;git rebase mater
-: 1608438071:0;git rebase master
-: 1608438079:0;git restore src/eval/unalias.c
-: 1608438083:0;gst
-: 1608438094:0;git restore --staged src/eval/unalias.c
-: 1608438096:0;gst
-: 1608438101:0;git restore src/eval/unalias.c
-: 1608438107:0;git rebase master
-: 1608438109:0;make
-: 1608438113:0;gst
-: 1608438749:0;git pull
-: 1608438768:0;git switch master
-: 1608438771:0;git pull
-: 1608438802:0;git switch refacto_check
-: 1608438849:0;clang-format -i src/*/*.c
-: 1608438850:0;gst
-: 1608438855:0;git add -u
-: 1608438858:0;git commit
-: 1608438889:0;fg
-: 1608439071:0;make
-: 1608439075:0;fg
-: 1608439095:0;make
-: 1608439099:0;fg
-: 1608439108:0;make
-: 1608439109:0;fg
-: 1608439112:0;make
-: 1608439117:0;pytest
-: 1608439130:0;fg
-: 1608439144:0;make
-: 1608439146:0;pytest
-: 1608439151:0;fg
-: 1608439220:0;make check
-: 1608439240:0;gst
-: 1608439247:0;git add src/eval/alias.c
-: 1608439251:0;git add src/lexer/rule_1_4.c
-: 1608439253:0;git commit
-: 1608439283:0;clang-format -i src/*/*.c
-: 1608439285:0;gst
-: 1608439291:0;git add src/lexer/rule_1_4.c
-: 1608439294:0;git commit
-: 1608439330:0;cd ../
-: 1608439331:0;l
-: 1608439334:0;mkdir test
-: 1608439345:0;touch test1 test2 test3
-: 1608439355:0;echo "1" > test*
-: 1608439371:0;mv test1 test2 test3 test/
-: 1608439373:0;cd test
-: 1608439375:0;echo "1" > test*
-: 1608439378:0;cat *
-: 1608439385:0;echo "2" >> test*
-: 1608439388:0;cat *
-: 1608439391:0;rm  *
-: 1608439394:0;cd ../
-: 1608439397:0;rmdir test
-: 1608439399:0;cd 42sh
-: 1608439413:0;echo "" >> src/*/*.c
-: 1608439415:0;gst
-: 1608439421:0;git add -u
-: 1608439426:0;git commit
-: 1608439449:0;clang-format -i src/*/*.c
-: 1608439451:0;git add -u
-: 1608439474:0;git commit
-: 1608439493:0;fg
-: 1608439515:0;git add src/eval/unalias.c
-: 1608439516:0;gst
-: 1608439528:0;fg
-: 1608439664:0;make
-: 1608439671:0;pytest
-: 1608439677:0;make check
-: 1608439684:0;make clean
-: 1608439685:0;fg
-: 1608439693:0;git add src/lexer/rule_1_4.c
-: 1608439696:0;git commit
-: 1608439704:0;fg
-: 1608439825:0;git status
-: 1608439831:0;git add src/lexer/rule_1_4.c 
-: 1608439834:0;git commit
-: 1608439849:0;clang-format -i src/lexer/rule_1_4.c
-: 1608439853:0;git add src/lexer/rule_1_4.c
-: 1608439856:0;gst
-: 1608439858:0;git commit
-: 1608439865:0;fg
-: 1608441006:0;make
-: 1608441020:0;fg
-: 1608441026:0;make
-: 1608441053:0;fg
-: 1608441195:0;make
-: 1608441197:0;fg
-: 1608441204:0;make
-: 1608441208:0;fg
-: 1608441229:0;make
-: 1608441233:0;pytest
-: 1608441248:0;fg
-: 1608441271:0;echo $(function hello_world () { echo hello world; }; hello_world;)
-: 1608441276:0;fg
-: 1608441311:0;/42sh -c "echo '${odmpzkiflaksdjflaksjfl\$f\$f\$\$f\$f\$'"
-: 1608441317:0;./42sh -c "echo '${odmpzkiflaksdjflaksjfl\$f\$f\$\$f\$f\$'"
-: 1608441343:0;./42sh -c "echo '\${odmpzkiflaksdjflaksjfl\$f\$f\$\$f\$f\$'"
-: 1608441346:0;fg
-: 1608441361:0;pytest
-: 1608441371:0;fg
-: 1608441389:0;pytest
-: 1608441398:0;fg
-: 1608441414:0;pytest
-: 1608441418:0;fg
-: 1608441443:0;pytest
-: 1608441447:0;fg
-: 1608441452:0;<fg
-: 1608441454:0;fg
-: 1608441460:0;<fg
-: 1608441463:0;fg
-: 1608441466:0;pytest
-: 1608441470:0;fg
-: 1608441476:0;pytest
-: 1608441493:0;fg
-: 1608441516:0;./42sh -c "echo \"\""
-: 1608441532:0;fg
-: 1608441553:0;pytest
-: 1608441570:0;fg
-: 1608441576:0;pytest
-: 1608441579:0;fg
-: 1608441585:0;pytest
-: 1608441593:0;fg
-: 1608441672:0;make
-: 1608441675:0;make check
-: 1608441686:0;pytest
-: 1608441690:0;fg
-: 1608441731:0;make
-: 1608441734:0;pytest
-: 1608441737:0;make check
-: 1608441740:0;fg
-: 1608441791:0;make check
-: 1608441796:0;make clean
-: 1608441799:0;make check
-: 1608441813:0;pytest
-: 1608441815:0;fg
-: 1608441859:0;make check
-: 1608441865:0;pytest
-: 1608441867:0;fg
-: 1608441946:0;make check
-: 1608441949:0;pytest
-: 1608441952:0;fg
-: 1608442122:0;make
-: 1608442127:0;fg
-: 1608442134:0;make
-: 1608442139:0;fg
-: 1608442157:0;make
-: 1608442160:0;fg
-: 1608442167:0;make
-: 1608442169:0;fg
-: 1608442220:0;make
-: 1608442222:0;pytest
-: 1608442249:0;fg
-: 1608442315:0;pytest
-: 1608442318:0;make cehck
-: 1608442321:0;make check
-: 1608442324:0;pytest
-: 1608442330:0;fg
-: 1608442788:0;make
-: 1608442793:0;fg
-: 1608442810:0;make
-: 1608442818:0;fg
-: 1608442873:0;make
-: 1608442879:0;fg
-: 1608442891:0;make
-: 1608442896:0;fg
-: 1608442912:0;make
-: 1608442915:0;fg
-: 1608442930:0;make
-: 1608442932:0;fg
-: 1608442938:0;make
-: 1608442940:0;pytest
-: 1608442953:0;fg
-: 1608443038:0;make
-: 1608443040:0;fg
-: 1608443044:0;make
-: 1608443047:0;pytest
-: 1608443058:0;fg
-: 1608443127:0;make
-: 1608443129:0;pytest
-: 1608443132:0;fg
-: 1608443331:0;make
-: 1608443333:0;pytest
-: 1608443336:0;make check
-: 1608443340:0;fg
-: 1608443409:0;make
-: 1608443415:0;fg
-: 1608443431:0;make
-: 1608443433:0;pytest
-: 1608443437:0;make check
-: 1608443439:0;fg
-: 1608443540:0;make check
-: 1608443544:0;pytest
-: 1608443546:0;fg
-: 1608444997:0;pre-commit run --all-files
-: 1608445238:0;fg
-: 1608445367:0;pre-commit run --all-files
-: 1608445402:0;fg
-: 1608445686:0;pre-commit run --all-files
-: 1608445707:0;fg
-: 1608445711:0;pre-commit run --all-files
-: 1608445728:0;fg
-: 1608445930:0;make
-: 1608445932:0;fg
-: 1608447126:0;cp src/eval/vars_and_quote.c ../
-: 1608447129:0;gst
-: 1608447155:0;git restore --staged src/eval/vars_and_quote.c 
-: 1608447161:0;git restore src/eval/vars_and_quote.c
-: 1608447162:0;gst
-: 1608447164:0;make
-: 1608447173:0;fg
-: 1608447196:0;make
-: 1608447225:0;fg
-: 1608447248:0;make
-: 1608447250:0;fg
-: 1608447280:0;make
-: 1608447285:0;fg
-: 1608447362:0;make
-: 1608447369:0;fg
-: 1608447378:0;make
-: 1608447381:0;fg
-: 1608447397:0;make
-: 1608447400:0;fg
-: 1608447429:0;make
-: 1608447433:0;fg
-: 1608447440:0;make
-: 1608447444:0;fg
-: 1608447545:0;gst
-: 1608447554:0;git switch master
-: 1608447565:0;cat src/lexer/lexing.c
-: 1608447580:0;git switch refacto_check
-: 1608447581:0;gst
-: 1608447702:0;fg
-: 1608447737:0;gst
-: 1608447741:0;make
-: 1608447744:0;fg
-: 1608447759:0;make
-: 1608447761:0;pytest
-: 1608447807:0;pre-commit run --all-files
-: 1608447920:0;make check
-: 1608447978:0;fg
-: 1608448180:0;cp src/lexer/lexing.c ../
-: 1608448192:0;git restore src/lexer/lexing.c
-: 1608448194:0;fg
-: 1608448310:0;make
-: 1608448312:0;pytest
-: 1608448316:0;make check
-: 1608448318:0;fg
-: 1608448418:0;make
-: 1608448420:0;pytest
-: 1608448423:0;make check
-: 1608448427:0;fg
-: 1608448483:0;make check
-: 1608448487:0;pytest
-: 1608448490:0;fg
-: 1608448556:0;make check
-: 1608448559:0;pytest
-: 1608448562:0;fg
-: 1608448601:0;make check
-: 1608448603:0;fg
-: 1608448609:0;make check
-: 1608448612:0;pytest
-: 1608448614:0;fg
-: 1608448826:0;make check
-: 1608448827:0;fg
-: 1608448892:0;make check
-: 1608448894:0;fg
-: 1608448905:0;make check
-: 1608448908:0;pytest
-: 1608448910:0;fg
-: 1608448945:0;pre-commit run --all-files
-: 1608448958:0;fg
-: 1608448985:0;make check
-: 1608448988:0;pytest
-: 1608448991:0;fg
-: 1608449137:0;make check
-: 1608449139:0;fg
-: 1608449154:0;make check
-: 1608449157:0;pytest
-: 1608449159:0;fg
-: 1608449183:0;pre-commit run --all-files
-: 1608449190:0;fg
-: 1608449428:0;make check
-: 1608449430:0;fg
-: 1608449441:0;make check
-: 1608449444:0;fg
-: 1608449453:0;make check
-: 1608449457:0;pytest
-: 1608449459:0;fg
-: 1608449498:0;make check
-: 1608449501:0;pytest
-: 1608449503:0;fg
-: 1608449516:0;pre-commit run --all-files
-: 1608449565:0;clang-format -i src/*/*.c
-: 1608449567:0;pre-commit run --all-files
-: 1608449650:0;pm
-: 1608449767:0;gst
-: 1608449774:0;git add -u
-: 1608449775:0;gst
-: 1608449778:0;git commit
-: 1608449796:0;git commit --no-verify
-: 1608449821:0;git push
-: 1608449829:0;gpsup
-: 1608449902:0;pre-commit run --all-files
-: 1608449923:0;fg
-: 1608449932:0;vim src/parser/ast.c
-: 1608449958:0;gst
-: 1608449968:0;git add src/parser/ast.c
-: 1608449971:0;pre-commit run --all-files
-: 1608450930:0;gst
-: 1608450941:0;ls
-: 1608450944:0;git commit
-: 1608450964:0;git push
-: 1608451046:0;gcm
-: 1608451050:0;git pull
-: 1608451056:0;make check
-: 1608451072:0;git switch refacto_check
-: 1608451083:0;vim src/parser/ast.c
-: 1608451093:0;make
-: 1608451097:0;fg
-: 1608451146:0;make
-: 1608451149:0;pytest
-: 1608451152:0;make check
-: 1608451160:0;make clean
-: 1608451214:0;gst
-: 1608451219:0;vim Makefile.am
-: 1608451237:0;git add -u
-: 1608451241:0;git commit
-: 1608451264:0;git push
-: 1608451280:0;man git-merge
-: 1608451293:0;gcm
-: 1608451306:0;git pull
-: 1608451317:0;git switch refacto_check
-: 1608451321:0;git pull
-: 1608451332:0;gloga
-: 1608451529:0;gcm
-: 1608451531:0;git pull
-: 1608451665:0;pre-commit run --all-files
-: 1608451722:0;git tag -a submission-week4-v1.1
-: 1608451727:0;gloga
-: 1608451743:0;git remote
-: 1608451767:0;git push --follow-tags cri master
-: 1608451813:0;git push --follow-tags cri
-: 1608451826:0;cd ../loup.dallier-42sh-2023
-: 1608451828:0;l
-: 1608451831:0;cd ../
-: 1608451834:0;rm -rf loup.dallier-42sh-2023
-: 1608451856:0;git clone git@git.assistants.epita.fr:p/2023/42sh-2023/loup.dallier-42sh-2023.git
-: 1608451866:0;cd loup.dallier-42sh-2023
-: 1608451869:0;./autogen.sh
-: 1608451876:0;./configure
-: 1608451881:0;make check
-: 1608451896:0;pytest
-: 1608451898:0;l
-: 1608451905:0;python -m venv venv
-: 1608451916:0;. venv/bin/activate
-: 1608451925:0;cp ../42sh/conftest.py
-: 1608451929:0;cp ../42sh/conftest.py ./
-: 1608451932:0;pytest
-: 1608451940:0;deactivate
-: 1608451945:0;make clean
-: 1608451951:0;man git
-: 1608451999:0;git clean
-: 1608452009:0;man git-clean
-: 1608452018:0;cd ../
-: 1608454000:0;ssh pi@192.168.0.25
-: 1608455965:0;sudo wifi-menu
-: 1608457799:0;cd 42sh
-: 1608457801:0;git pull
-: 1608457811:0;pre-commit run --all-files
-: 1608457834:0;fg
-: 1608458028:0;make
-: 1608458034:0;fg
-: 1608458074:0;make
-: 1608458081:0;make check
-: 1608458096:0;. venv/bin/activate
-: 1608458099:0;pytest
-: 1608458117:0;git add src/eval/alias.c
-: 1608458119:0;pre-commit run --all-files
-: 1608458129:0;fg
-: 1608458207:0;make check
-: 1608458211:0;pytest
-: 1608458216:0;gst
-: 1608458221:0;git add src/eval/vars_and_quote.c
-: 1608458223:0;pre-commit run --all-files
-: 1608458235:0;fg
-: 1608458385:0;make
-: 1608458388:0;fg
-: 1608458480:0;make
-: 1608458483:0;fg
-: 1608458510:0;make
-: 1608458517:0;fg
-: 1608458544:0;make
-: 1608458546:0;pytest
-: 1608458549:0;fg
-: 1608458569:0;pre-commit run --all-files
-: 1608458586:0;clang-format -i src/*/*.c
-: 1608458589:0;pre-commit run --all-files
-: 1608458593:0;gst
-: 1608458606:0;gcb final_refacto
-: 1608458611:0;git add -u
-: 1608458619:0;git add src/eval/vars_and_quote_aux.c
-: 1608458624:0;fg
-: 1608458636:0;make
-: 1608458640:0;make clean
-: 1608458642:0;make
-: 1608458646:0;pytest
-: 1608458667:0;fg
-: 1608458697:0;make check
-: 1608458707:0;make clean
-: 1608458709:0;make
-: 1608458713:0;pytest
-: 1608458720:0;make clean
-: 1608458723:0;./configure
-: 1608458727:0;make
-: 1608458731:0;pytest
-: 1608458733:0;l
-: 1608458750:0;cp ~/Downloads/42sh-2023-1.9.1-conftest.py ./conftest.py
-: 1608458754:0;vim conftest.py
-: 1608458760:0;pytest
-: 1608458764:0;fg
-: 1608458767:0;gst
-: 1608458770:0;git add Makefile.am
-: 1608458774:0;git commit
-: 1608458796:0;gpsup
-: 1608458855:0;clang-format -i src/*/*.h
-: 1608458856:0;clang-format -i src/*/*.c
-: 1608458857:0;gst
-: 1608458865:0;git switch master
-: 1608458867:0;git pull
-: 1608458877:0;git tag -a submission-week4-v1.2
-: 1608458890:0;git push --follow-tags cri
-: 1608458906:0;cd ../
-: 1608458911:0;rm -rf loup.dallier-42sh-2023
-: 1608458915:0;git clone git@git.assistants.epita.fr:p/2023/42sh-2023/loup.dallier-42sh-2023.git
-: 1608458934:0;cd loup.dallier-42sh-2023
-: 1608458937:0;./autogen.sh
-: 1608458942:0;./configure
-: 1608458946:0;make
-: 1608458951:0;tree
-: 1608458957:0;make clean
-: 1608458958:0;tree
-: 1608458986:0;pytest
-: 1608458995:0;cp ~/Downloads/42sh-2023-1.9.1-conftest.py ./conftest.py
-: 1608458998:0;vim conftest.py
-: 1608459006:0;pytest
-: 1608459010:0;deactivate
-: 1608459017:0;python -m venv venv
-: 1608459026:0;. venv/bin/activate
-: 1608459028:0;pytest
-: 1608459038:0;make
-: 1608459042:0;pytest
-: 1608459047:0;cd ../
-: 1608459091:0;cd loup.dallier-42sh-2023
-: 1608459092:0;gloga
-: 1608460202:0;:q
-: 1608460204:0;fg
-: 1608460215:0;gls
-: 1608460217:0;git ls
-: 1608460222:0;git ls-files
-: 1608460232:0;deactivate
-: 1608460234:0;:q
-: 1608582619:0;sudo wifi-menu
-: 1608582868:0;cd /etc
-: 1608582868:0;l
-: 1608582887:0;cd netctl
-: 1608582888:0;l
-: 1608582896:0;cat wlp3s0-SFR-f138
-: 1608582904:0;sudo cat wlp3s0-SFR-f138
-: 1608583753:0;cd
-: 1608583762:0;cd Documents/projects/loup.dallier-42sh-2023
-: 1608583764:0;gloga
-: 1608584213:0;vim src/parser/parse_command.
-: 1608584216:0;vim src/parser/parse_command.c
-: 1608584255:0;man clang-format
-: 1608584266:0;clang-format --help
-: 1608584295:0;cp ../../.clang-format ./
-: 1608584322:0;clang-format --style=file src/parser/parse_command.c
-: 1608584467:0;pm
-: 1608584774:0;clang-format --style=file src/parser/parse_command.c
-: 1608584815:0;maim
-: 1608584829:0;n
-: 1608584833:0;man maim
-: 1608584878:0;cd Pictures
-: 1608584878:0;l
-: 1608584882:0;feh clang-format-ternary
-: 1608584960:0;l
-: 1608584965:0;feh Screenshot_2020-12-21\ src\ parser\ parse_command\ c\ ·\ master\ ·\ Loup\ Dallier\ 42sh.png
-: 1608585798:0;:q
-: 1608585884:0;fg
-: 1608586046:0;sudo pacman -Syu
-: 1608586062:0;yay -Syu --devel
-: 1608586266:0;:q
-: 1608586335:0;sudo wifi-menu
-: 1608586416:0;sudo netctl enable wlp3s0-SFR-f138
-: 1608586433:0;netctl
-: 1608586451:0;netctl list
-: 1608586463:0;netctl status
-: 1608586471:0;netctl status *
-: 1608586488:0;netctl status wlp3s0-SFR-7a08_5GHz
-: 1608586538:0;netctl status wlp3s0-Sneerow
-: 1608586563:0;netctl status wlp3s0-Livebox-Pinso
-: 1608586574:0;netctl status wlp3s0-SFR_FAE0
-: 1608586602:0;cd /etc/netctl
-: 1608586603:0;l
-: 1608586620:0;cat enp0s2f0u1u2
-: 1608586780:0;:q
-: 1608586951:0;sudo netctl disable wlp3s0-SFR-f138
-: 1608586963:0;netctl enable wlp3s0-SFR-f138
-: 1608586981:0;sudo wifi-menu
-: 1608587017:0;netctl list
-: 1608587036:0;cd /etc/netctl
-: 1608587070:0;sudo cat wlp3s0-SFR-f138
-: 1608587220:0;sudo netctl start wlp3s0-SFR-f138
-: 1608587230:0;sudo netctl enable wlp3s0-SFR-f138
-: 1608587270:0;reboot
-: 1608587326:0;logout
-: 1608587385:0;sudo netctl start wlp3s0-SFR-f138
-: 1608587801:0;cd /etc/netctl
-: 1608587802:0;l
-: 1608587810:0;sudo cat wlp3s0-Livebox-Pinso
-: 1608587854:0;sudo cp wlp3s0-SFR-f138 wlp3s0-SFR-f138.bck
-: 1608587862:0;rm wlp3s0-SFR-f138
-: 1608587868:0;sudo rm wlp3s0-SFR-f138
-: 1608587900:0;cp wlp3s0-SFR_FAE0 wlp3s0-SFR-f138
-: 1608587920:0;sudo netctl disable wlp3s0-SFR-f138
-: 1608587928:0;sudo cp wlp3s0-SFR_FAE0 wlp3s0-SFR-f138
-: 1608587942:0;sudo vim wlp3s0-SFR-f138
-: 1608588013:0;sudo wifi-menu
-: 1608588038:0;sudo rm wlp3s0-SFR-f138.bck
-: 1608588051:0;sudo cat wlp3s0-SFR-f138
-: 1608588091:0;reboot
-: 1608643760:0;sudo wifi-menu
-: 1608643797:0;man wifi-menu
-: 1608643823:0;sudo pacman -Syu
-: 1608643878:0;yay -Syu --devel
-: 1608643884:0;:q
-: 1608656143:0;sudo wifi-menu
-: 1608656209:0;:q
-: 1608656354:0;sudo pacman -Q yay-git
-: 1608656621:0;sudo systemctl status netctl.service
-: 1608656642:0;sudo systemctl status netctl@wlp3s0\\x2dSFR\\x2df138.service
-: 1608656821:0;paccache -r
-: 1608656828:0;sudo pacman -Qtdq
-: 1608657017:0;systemctl
-: 1608657065:0;sudo netctl disable wlp3s0-SFR-f138
-: 1608657071:0;systemctl
-: 1608657178:0;sudo systemctl enable netctl@wlp3s0-SFR-f138
-: 1608657185:0;sudo systemctl enable netctl@wlp3s0-SFR-f138.service
-: 1608657195:0;sudo systemctl enable netctl-auto@wlp3s0-SFR-f138.service
-: 1608657242:0;sudo netctl-auto enable wlp3s0-SFR-f138
-: 1608657255:0;l /etc/netctl
-: 1608657313:0;systemctl
-: 1608657415:0;netctl-auto
-: 1608657420:0;netctl-auto list
-: 1608657435:0;netctl list
-: 1608657448:0;l /etc
-: 1608657522:0;man 7 netctl.special
-: 1608657572:0;man 5 netctl.profile
-: 1608721721:0;sudo wifi-menu
-: 1608721735:0;systemctl
-: 1608721784:0;sudo netctl disable wlp3s0-SFR-f138
-: 1608721793:0;cd Documents
-: 1608721797:0;mkdir graphs
-: 1608721799:0;cd graphs
-: 1608721804:0;vim 1.dot
-: 1608721900:0;man dot
-: 1608721911:0;dot -Tpng 1.dot
-: 1608721913:0;l
-: 1608721963:0;fg
-: 1608721976:0;dot -Tpng 1.dot
-: 1608721978:0;l
-: 1608721985:0;mv 1.dot one.dot
-: 1608721990:0;dot -Tpng one.dot
-: 1608722115:0;dot -Tpng one.dot -o one.png
-: 1608722116:0;l
-: 1608722120:0;feh one.png
-: 1608722131:0;fg
-: 1608722162:0;dot -Tpng one.dot -o one.png
-: 1608722166:0;feh one.png
-: 1608722171:0;l
-: 1608722174:0;fg
-: 1608722183:0;mv 1.dot one.dot
-: 1608722185:0;dot -Tpng one.dot -o one.png
-: 1608722187:0;feh one.png
-: 1608722323:0;fg
-: 1608722336:0;l
-: 1608722347:0;feh feh_002213_000001_one.png
-: 1608722352:0;l
-: 1608722356:0;feh one.png
-: 1608722361:0;rm feh_002213_000001_one.png
-: 1608722366:0;vim two.dot
-: 1608722405:0;dot -Tpng two.dot -o two.png
-: 1608722408:0;feh two.png
-: 1608722465:0;fg
-: 1608722579:0;dot -Tpng three.dot -o three.png
-: 1608722583:0;fg
-: 1608722785:0;cd Documents/graphs
-: 1608722792:0;vim multi.py
-: 1608722809:0;python
-: 1608722851:0;pip install networkx
-: 1608722856:0;python
-: 1608723048:0;pip install pydot
-: 1608723070:0;python
-: 1608723140:0;l
-: 1608723150:0;dot -Tpng multi.dot -o multi.png
-: 1608723152:0;l
-: 1608723156:0;feh multi.png
-: 1608723163:0;python
-: 1608723271:0;dot -Tpng multi.dot -o multi.png
-: 1608723273:0;feh multi.png
-: 1608723454:0;vim pred.dot
-: 1608723489:0;python
-: 1608723590:0;dot -Tpng multi.dot -o multi.png
-: 1608723592:0;feh multi.png
-: 1608723614:0;l
-: 1608723619:0;rm *.png
-: 1608723620:0;l
-: 1608723655:0;vim pred.dot
-: 1608723906:0;dot -Tpng pred.dot -o pred.png
-: 1608723911:0;feh pred.png
-: 1608723957:0;fg
-: 1608724114:0;dot -Tpng nei.dot -o nei.png
-: 1608724117:0;feh nei.png
-: 1608724176:0;cd Documents/graphs
-: 1608724179:0;vim nei.dot
-: 1608724214:0;:q
-: 1608724219:0;dot -Tpng nei.dot -o nei.png
-: 1608724221:0;feh nei.png
-: 1608724259:0;fg
-: 1608724421:0;dot -Tpng friends.dot -o friends.png
-: 1608724427:0;feh friends.png
-: 1608724503:0;fg
-: 1608724506:0;:
-: 1608724507:0;;q
-: 1608724508:0;:q
-: 1608724732:0;fg
-: 1608724733:0;:q
-: 1609012704:0;sudo wifi-menu
-: 1609012744:0;:q
-: 1609012767:0;cd /etc/netctl/
-: 1609012768:0;l
-: 1609012776:0;sudo cat wlp3s0-Freebox-4BF62E
-: 1609012823:0;:q
-: 1609020938:0;systemctl
-: 1609020974:0;sudo netctl disable wlp3s0-SFR-7a08_5GHz
-: 1609020976:0;systemctl
-: 1609021004:0;sudo systemctl disable netctl@wlp3s0\x2dSFR\x2d7a08_5GHz.service
-: 1609021006:0;systemctl
-: 1609021030:0;systemctl status netctl@wlp3s0\\x2dSFR\\x2d7a08_5GHz.service
-: 1609021092:0;netctl status wlp3s0-SFR-7a08_5GHz
-: 1609021102:0;netctl disable wlp3s0-SFR-7a08_5GHz
-: 1609021105:0;sudo netctl disable wlp3s0-SFR-7a08_5GHz
-: 1609021108:0;netctl status wlp3s0-SFR-7a08_5GHz
-: 1609021119:0;sudo netctl stop wlp3s0-SFR-7a08_5GHz
-: 1609021121:0;netctl status wlp3s0-SFR-7a08_5GHz
-: 1609021168:0;sudo netctl-auto status wlp3s0-SFR-7a08_5GHz
-: 1609021184:0;sudo netctl-auto is-active wlp3s0-SFR-7a08_5GHz
-: 1609021197:0;sudo netctl-auto disable-all
-: 1609021200:0;sudo netctl-auto status wlp3s0-SFR-7a08_5GHz
-: 1609021206:0;sudo netctl-auto list
-: 1609021212:0;man systemctl
-: 1609021229:0;journalctl
-: 1609021303:0;man journal
-: 1609021305:0;man journalctl
-: 1609021353:0;reboot
-: 1609021382:0;systemctl
-: 1609021398:0;netctl-auto enable-all
-: 1609021412:0;netctl-auto list
-: 1609021418:0;netctl-auto
-: 1609021451:0;sudo wifi-menu
-: 1609021493:0;systemctl status netctl@wlp3s0\\x2dFreebox\\x2d4BF62E.service
-: 1609021517:0;netctl-auto disable-all
-: 1609021520:0;sudo wifi-menu
-: 1609021544:0;journalctl -xe
-: 1609021584:0;sudo set wlp3s0 down
-: 1609021590:0;sudo ip set wlp3s0 down
-: 1609021595:0;ip help
-: 1609021692:0;sudo ip link set wlp3s0 down
-: 1609021696:0;sudo wifi-menu
-: 1609022952:0;:q
-: 1609024557:0;shutdown
-: 1609024565:0;poweroff
-: 1609345717:0;autorandr -l
-: 1609345721:0;autorandr
-: 1609345733:0;autorandr -l left-dual-screen-H
-: 1609345745:0;autorandr
-: 1609345750:0;autorandr -l external-H
-: 1609345754:0;:q
-: 1609372434:0;sudo pacman -Syu
-: 1609372453:0;yay -Syu --devel
-: 1609372789:0;sudo pacman -Qtdq
-: 1609372824:0;sudo pacman -Rns $(sudo pacman -Qtdq)
-: 1609372835:0;paccache -r
-: 1609372849:0;dust
-: 1609372889:0;doom update
-: 1609372895:0;doom upgrade
-: 1609373025:0;emacs
-: 1609373029:0;:q
-: 1609376609:0;sudo pacman -Syu
-: 1609376957:0;yay -S upd72020x-fw
-: 1609377034:0;yay -S aic94xx-firmware wd719x-firmware
-: 1609377064:0;sudo pacman -Qtdq
-: 1609377068:0;paccache -r
-: 1609377092:0;dust /etc/pacman.d/
-: 1609377100:0;:q
-: 1609508550:0;sudo pacman -Syu
-: 1609508562:0;yay -Syu --devel
-: 1609508681:0;cd Documents
-: 1609508681:0;l
-: 1609508684:0;cat links.html
-: 1609508730:0;:q
-: 1609508734:0;cd -
-: 1609508736:0;cd 2
-: 1609508738:0;cd -2
-: 1609508742:0;cd Documents
-: 1609508742:0;l
-: 1609508751:0;dir stack
-: 1609508753:0;man dir
-: 1609508818:0;l
-: 1609508824:0;cd raytracer-livecoding
-: 1609508825:0;l
-: 1609508853:0;git pull
-: 1609509021:0;l
-: 1609509025:0;vim rt.c
-: 1609509159:0;mkdir src/kdtree
-: 1609509160:0;fg
-: 1609509906:0;l
-: 1609509926:0;mv src/kdtree.c includes/kdtree.h
-: 1609509927:0;cd
-: 1609509928:0;fg
-: 1609509932:0;cd -
-: 1609509933:0;fg
-: 1609512603:0;autorandr
-: 1609512627:0;autorandr -l left-dual-screen-H
-: 1609512640:0;:q
-: 1609513503:0;autorandr -l left-dual-screen-H
-: 1609513651:0;cd Documents/raytracer-livecoding
-: 1609514108:0;l
-: 1609514118:0;rmdir src/kdtree
-: 1609514122:0;vim src/kdtree.c
-: 1609516210:0;autorandr -l left-dual-screen-H
-: 1609516238:0;cd Documents/raytracer-livecoding
-: 1609516246:0;vim src/kdtree.c
-: 1609518878:0;make
-: 1609518887:0;fg
-: 1609518906:0;make
-: 1609518960:0;fg
-: 1609519053:0;make
-: 1609519057:0;ls
-: 1609519059:0;l
-: 1609519072:0;make clean
-: 1609519073:0;l
-: 1609519074:0;tree
-: 1609519096:0;rm src/sphere.c
-: 1609519102:0;rm includes/sphere.h
-: 1609519105:0;make
-: 1609519108:0;fg
-: 1609519211:0;make
-: 1609519213:0;fg
-: 1609519231:0;l includes
-: 1609519276:0;make
-: 1609519281:0;fg
-: 1609519285:0;make clean
-: 1609519287:0;make
-: 1609519291:0;make clean
-: 1609519292:0;fg
-: 1609519303:0;ls
-: 1609519305:0;l
-: 1609519307:0;l src
-: 1609519311:0;l
-: 1609519315:0;rm rt.d
-: 1609519316:0;make
-: 1609519322:0;fg
-: 1609519336:0;make clean
-: 1609519338:0;make
-: 1609519361:0;fg
-: 1609519499:0;make
-: 1609519512:0;fg
-: 1609519535:0;make
-: 1609519538:0;fg
-: 1609519610:0;make
-: 1609519623:0;fg
-: 1609519642:0;make
-: 1609519647:0;fg
-: 1609519703:0;make
-: 1609519707:0;fg
-: 1609519729:0;make
-: 1609519740:0;fg
-: 1609519758:0;make
-: 1609519765:0;fg
-: 1609519804:0;make
-: 1609519809:0;fg
-: 1609519814:0;make
-: 1609519816:0;fg
-: 1609519836:0;make
-: 1609519839:0;fg
-: 1609519853:0;make
-: 1609519866:0;fg
-: 1609519877:0;make
-: 1609519911:0;fg
-: 1609519988:0;make
-: 1609519997:0;make clean
-: 1609519998:0;make
-: 1609520021:0;fg
-: 1609520053:0;make
-: 1609520063:0;fg
-: 1609520067:0;make
-: 1609520079:0;fg
-: 1609520094:0;make
-: 1609520103:0;fg
-: 1609520128:0;make
-: 1609520132:0;fg
-: 1609520179:0;make
-: 1609520187:0;fg
-: 1609520198:0;make
-: 1609520202:0;fg
-: 1609520215:0;make
-: 1609520224:0;make clean
-: 1609520226:0;make
-: 1609520259:0;fg
-: 1609520363:0;make
-: 1609520365:0;make clean
-: 1609520367:0;make
-: 1609520385:0;fg
-: 1609520406:0;make clean
-: 1609520407:0;make
-: 1609520505:0;fg
-: 1609523695:0;clang-format -i src/*.c
-: 1609523697:0;l
-: 1609523699:0;make
-: 1609523701:0;make clean
-: 1609523702:0;make
-: 1609524046:0;fg
-: 1609524054:0;sudo wifi-menu
-: 1609524072:0;ip a
-: 1609524087:0;ip link set wlp3s0 down
-: 1609524090:0;sudo ip link set wlp3s0 down
-: 1609524094:0;ip a
-: 1609534767:0;autorandr -l left-dual-screen-H
-: 1609534787:0;cd Documents
-: 1609534807:0;git clone git@git.assistants.epita.fr:p/2023/asm-2023/loup.dallier-asm-2023.git
-: 1609534827:0;cd loup.dallier-asm-2023/
-: 1609534830:0;cd ../
-: 1609534830:0;l
-: 1609534845:0;mv loup.dallier-asm-2023 projects
-: 1609534848:0;cd projects/o
-: 1609534850:0;cd projects/
-: 1609534851:0;l
-: 1609534853:0;cd loup.dallier-asm-2023
-: 1609534854:0;l
-: 1609534951:0;mkdir my_strlen my_strcp my_strchr cat
-: 1609534952:0;l
-: 1609535047:0;man 3 strchr
-: 1609535195:0;vim ~/.zshenv
-: 1609535242:0;reload
-: 1609535245:0;man 3 strchr
-: 1609535255:0;logout
-: 1609535267:0;autorandr -l left-dual-screen-H
-: 1609535281:0;man 3 strchr
-: 1609535378:0;vim .zshe
-: 1609535382:0;vim .zshenv
-: 1609535397:0;l
-: 1609535401:0;vim .vimrc
-: 1609535447:0;vim .zshenv
-: 1609535469:0;logout
-: 1609535480:0;autorandr -l left-dual-screen-H
-: 1609535488:0;man 3 strchr
-: 1609535536:0;systemctl
-: 1609535543:0;systemctl | vim
-: 1609535551:0;fg
-: 1609535554:0;vim .zshenv
-: 1609535666:0;vim
-: 1609535748:0;l
-: 1609535750:0;fg
-: 1609535796:0;cat .python_history
-: 1609535800:0;cat .python_history | vim
-: 1609535806:0;cat .python_history | less
-: 1609535810:0;cat .python_history | most
-: 1609535823:0;cat .python_history | more
-: 1609535840:0;vim .python_history
-: 1609535871:0;cd Documents/projects/loup.dallier-asm-2023
-: 1609535872:0;l
-: 1609535900:0;cd ../loup.dallier-42sh-2023
-: 1609535903:0;gloga
-: 1609535911:0;gloga | most
-: 1609535917:0;gloga
-: 1609535927:0;git log
-: 1609535937:0;gloga
-: 1609535978:0;vim .zshen
-: 1609535985:0;vim ~/.zshenv
-: 1609536002:0;logout
-: 1609536025:0;autorandr -l left-dual-screen-H
-: 1609536038:0;cd Documents/projects/loup.dallier-42sh-2023
-: 1609536041:0;gloga
-: 1609536062:0;man
-: 1609536065:0;man man
-: 1609536191:0;man 3 strlen
-: 1609536618:0;cd ../loup.dallier-asm-2023
-: 1609536618:0;l
-: 1609536623:0;cd my_str
-: 1609536625:0;cd my_strlen
-: 1609536626:0;l
-: 1609536649:0;vim my_strlen.S
-: 1609537914:0;cd
-: 1609537917:0;cd Videos
-: 1609537917:0;l
-: 1609537922:0;vlc raytracing-1st-class.mp4
-: 1609537948:0;cd /windows/Users/loupd/Documents
-: 1609537949:0;l
-: 1609537960:0;mkdir Raytracing
-: 1609537962:0;l
-: 1609537971:0;mv ~/Videos/raytracing-1st-class.mp4 ./Raytracing
-: 1609537972:0;l
-: 1609537977:0;l Raytracing
-: 1609537983:0;cd ../Downloads
-: 1609537984:0;l
-: 1609537991:0;vlc video.mp4
-: 1609538029:0;mkdir EQUAL
-: 1609538092:0;mv ~/Downloads/video.mp4 ./EQUAL/30-11-2020.mp4
-: 1609538107:0;vlc video\ \(1\).mp4
-: 1609538133:0;mv ~/Downloads/video\ \(1\).mp4 ./Raytracing/27-11-2020.mp4
-: 1609538143:0;vlc video\ \(2\).mp4
-: 1609538181:0;mv ~/Downloads/video\ \(2\).mp4 ./Raytracing/01-12-2020.mp4
-: 1609538192:0;vlc video\ \(3\).mp4
-: 1609538233:0;mv ~/Downloads/video\ \(3\).mp4 ./STAI/04-12-2020.mp4
-: 1609538241:0;l
-: 1609538247:0;vlc video\ \(4\).mp4
-: 1609538263:0;rm video\ \(4\).mp4
-: 1609538268:0;vlc video\ \(5\).mp4
-: 1609538277:0;rm video\ \(5\).mp4
-: 1609538282:0;vlc video\ \(6\).mp4
-: 1609538307:0;mv ~/Downloads/video\ \(6\).mp4 ./Raytracing/11-12-2020.mp4
-: 1609538317:0;vlc video\ \(7\).mp4
-: 1609538327:0;rm video\ \(7\).mp4
-: 1609538330:0;vlc video\ \(8\).mp4
-: 1609538336:0;rm video\ \(8\).mp4
-: 1609538340:0;vlc video\ \(9\).mp4
-: 1609538366:0;mv ~/Downloads/video\ \(9\).mp4 ./Raytracing/08-12-2020.mp4
-: 1609538375:0;vlc video\ \(10\).mp4
-: 1609538386:0;rm video\ \(10\).mp4
-: 1609538390:0;vlc video\ \(11\).mp4
-: 1609538417:0;mv ~/Downloads/video\ \(11\).mp4 ./Raytracing/16-12-2020.mp4
-: 1609538427:0;vlc video\ \(12\).mp4
-: 1609538453:0;mv ~/Downloads/video\ \(12\).mp4 STAI/18-12-2020.mp4
-: 1609538458:0;l
-: 1609538464:0;tree
-: 1609538572:0;l
-: 1609538578:0;vlc video.mp4
-: 1609538589:0;vlc video\ \(1\).mp4
-: 1609538619:0;mv ~/Downloads/video\ \(1\).mp4 ASM/15-12-2020.mp4
-: 1609538626:0;vlc video.mp4
-: 1609538643:0;mv ~/Downloads/video.mp4 ASM/17-12-2020.mp4
-: 1609538655:0;:q
-: 1609538671:0;dust
-: 1609538677:0;cd
-: 1609538678:0;dust
-: 1609538728:0;rm -rf .cache/*
-: 1609538734:0;dust
-: 1609538739:0;l
-: 1609538743:0;l .cache
-: 1609592984:0;:q
-: 1609592988:0;autorandr -l left-dual-screen-H
-: 1609593123:0;cd Documents/
-: 1609593124:0;l
-: 1609593131:0;l raytracing
-: 1609593138:0;rm -rf raytracing
-: 1609593140:0;cd raytracer-livecoding
-: 1609593141:0;l
-: 1609593158:0;make clean
-: 1609593178:0;vim src/kdtree.c
-: 1609596044:0;fg
-: 1609599865:0;cd Documents/projects
-: 1609599892:0;git clone git@git.assistants.epita.fr:p/2023/gire-2023/loup.dallier-gire-2023.git
-: 1609599915:0;cd loup.dallier-gire-2023
-: 1609599916:0;l
-: 1609599955:0;cp -r ../../raytracer-livecoding/includes ./
-: 1609599956:0;l
-: 1609600084:0;cp -r ../../raytracer-livecoding/includes ./
-: 1609600090:0;cp -r ../../raytracer-livecoding/src ./
-: 1609600096:0;:q
-: 1609603037:0;make
-: 1609603053:0;glog
-: 1609603058:0;gst
-: 1609603075:0;fg
-: 1609603089:0;make
-: 1609603158:0;fg
-: 1609603221:0;make
-: 1609603231:0;fg
-: 1609603291:0;make
-: 1609603296:0;fg
-: 1609603329:0;make
-: 1609603335:0;fg
-: 1609603493:0;make
-: 1609603647:0;fg
-: 1609603717:0;make
-: 1609603727:0;fg
-: 1609603740:0;make
-: 1609603746:0;fg
-: 1609603890:0;make
-: 1609604034:0;fg
-: 1609604076:0;make
-: 1609604086:0;fg
-: 1609604305:0;make
-: 1609604325:0;fg
-: 1609604336:0;make
-: 1609604345:0;fg
-: 1609604379:0;make
-: 1609604391:0;fg
-: 1609604407:0;make
-: 1609604419:0;fg
-: 1609604448:0;make
-: 1609604462:0;fg
-: 1609605647:0;make
-: 1609605674:0;fg
-: 1609605952:0;grep "obj_list" src/*
-: 1609605959:0;grep "obj_vect" src/*
-: 1609605970:0;fg
-: 1609606030:0;make
-: 1609606036:0;make clean
-: 1609606037:0;make
-: 1609606057:0;make clean
-: 1609606065:0;grep "obj_vect" includes/*
-: 1609606077:0;grep "obj_list" includes/*
-: 1609606080:0;fg
-: 1609606093:0;make
-: 1609606096:0;fg
-: 1609606176:0;make
-: 1609606179:0;fg
-: 1609606380:0;cat src/utils/pvect.c
-: 1609606394:0;cat src/utils/gvect.defs
-: 1609606496:0;cat src/utils/alloc.c
-: 1609606785:0;make
-: 1609606806:0;fg
-: 1609606826:0;make
-: 1609606861:0;fg
-: 1609606976:0;make
-: 1609607119:0;fg
-: 1609609293:0;cd ../
-: 1609609298:0;l
-: 1609609301:0;mkdir tmp
-: 1609609303:0;cd tmp
-: 1609609329:0;git clone https://github.com/multun/raytracer-project-base.git
-: 1609609336:0;l
-: 1609609339:0;cd raytracer-project-base
-: 1609609348:0;make
-: 1609609403:0;rt
-: 1609609405:0;./rt
-: 1609609421:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609609448:0;cd Documents/tmp
-: 1609609449:0;l
-: 1609609451:0;cd raytracer-project-base
-: 1609609453:0;l
-: 1609609459:0;:q
-: 1609609489:0;l
-: 1609609521:0;vim rt.c
-: 1609609555:0;make
-: 1609609561:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609609562:0;l
-: 1609609566:0;feh out.bmp
-: 1609609596:0;fg
-: 1609609601:0;vim rt.c
-: 1609609615:0;make
-: 1609609617:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609609621:0;feh out.bmp
-: 1609609628:0;fg
-: 1609609637:0;vim rt
-: 1609609642:0;vim rt.c
-: 1609609661:0;make
-: 1609609750:0;feh out.bmp
-: 1609610517:0;vim rt.c
-: 1609610551:0;make
-: 1609610555:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609610559:0;fg
-: 1609610569:0;make
-: 1609610570:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609610573:0;feh out.bmp
-: 1609610588:0;make clean
-: 1609610589:0;make
-: 1609610594:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609611144:0;l
-: 1609611161:0;vim includes/object.h
-: 1609611181:0;vim src/utils/evect.c
-: 1609611609:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609611613:0;feh out.bmp
-: 1609611732:0;git restore rt.c 
-: 1609611734:0;gst
-: 1609611739:0;vim rt.c
-: 1609611807:0;make
-: 1609611815:0;./rt out.bmp
-: 1609611822:0;l
-: 1609611823:0;fg
-: 1609611867:0;make
-: 1609611869:0;./rt out.bmp
-: 1609611872:0;feh out.bmp
-: 1609611973:0;fg
-: 1609612564:0;vim rt.c
-: 1609612610:0;make
-: 1609612613:0;./rt out.bmp
-: 1609612616:0;feh out.bmp
-: 1609612619:0;fg
-: 1609612641:0;make
-: 1609612643:0;./rt out.bmp
-: 1609612645:0;feh out.bmp
-: 1609612653:0;fg
-: 1609612707:0;make
-: 1609612709:0;./rt out.bmp
-: 1609612711:0;feh out.bmp
-: 1609612713:0;fg
-: 1609612720:0;make
-: 1609612721:0;./rt out.bmp
-: 1609612723:0;feh out.bmp
-: 1609612725:0;fg
-: 1609612746:0;make
-: 1609612748:0;./rt out.bmp
-: 1609612749:0;feh out.bmp
-: 1609613294:0;fg
-: 1609613316:0;make
-: 1609613317:0;./rt out.bmp
-: 1609613319:0;feh out.bmp
-: 1609613326:0;fg
-: 1609613336:0;make
-: 1609613338:0;./rt out.bmp
-: 1609613339:0;feh out.bmp
-: 1609613340:0;fg
-: 1609613518:0;make
-: 1609613519:0;./rt out.bmp
-: 1609613520:0;feh out.bmp
-: 1609613565:0;fg
-: 1609613645:0;make
-: 1609613647:0;./rt out.bmp
-: 1609613649:0;feh out.bmp
-: 1609613654:0;fg
-: 1609613676:0;make
-: 1609613677:0;./rt out.bmp
-: 1609613679:0;feh out.bmp
-: 1609613681:0;fg
-: 1609613691:0;make
-: 1609613692:0;./rt out.bmp
-: 1609613693:0;feh out.bmp
-: 1609613695:0;fg
-: 1609613706:0;make
-: 1609613707:0;./rt out.bmp
-: 1609613709:0;feh out.bmp
-: 1609613716:0;fg
-: 1609613807:0;feh out.bmp
-: 1609613880:0;fg
-: 1609613908:0;make
-: 1609613911:0;./rt out.bmp
-: 1609613912:0;feh out.bmp
-: 1609613915:0;fg
-: 1609613932:0;make
-: 1609613938:0;./rt out.bmp
-: 1609613951:0;feh out.bmp
-: 1609613953:0;fg
-: 1609614022:0;make
-: 1609614025:0;./rt out.bmp
-: 1609614027:0;feh out.bmp
-: 1609614029:0;fg
-: 1609614038:0;make
-: 1609614039:0;./rt out.bmp
-: 1609614040:0;feh out.bmp
-: 1609614046:0;fg
-: 1609614053:0;make
-: 1609614054:0;./rt out.bmp
-: 1609614055:0;feh out.bmp
-: 1609614060:0;fg
-: 1609614068:0;make
-: 1609614069:0;./rt out.bmp
-: 1609614070:0;feh out.bmp
-: 1609614087:0;fg
-: 1609614172:0;make
-: 1609614173:0;./rt out.bmp
-: 1609614175:0;feh out.bmp
-: 1609614178:0;fg
-: 1609614198:0;make
-: 1609614199:0;./rt out.bmp
-: 1609614201:0;feh out.bmp
-: 1609614207:0;fg
-: 1609614214:0;./rt out.bmp
-: 1609614216:0;make
-: 1609614218:0;./rt out.bmp
-: 1609614221:0;feh out.bmp
-: 1609614226:0;fg
-: 1609614240:0;make
-: 1609614241:0;./rt out.bmp
-: 1609614243:0;feh out.bmp
-: 1609614258:0;fg
-: 1609614266:0;make
-: 1609614268:0;./rt out.bmp
-: 1609614269:0;feh out.bmp
-: 1609614274:0;fg
-: 1609614575:0;make
-: 1609614577:0;./rt out.bmp
-: 1609614579:0;feh out.bmp
-: 1609614583:0;fg
-: 1609614595:0;make
-: 1609614597:0;./rt out.bmp
-: 1609614598:0;feh out.bmp
-: 1609614600:0;fg
-: 1609614618:0;make
-: 1609614619:0;./rt out.bmp
-: 1609614621:0;feh out.bmp
-: 1609614625:0;fg
-: 1609622006:0;jobs
-: 1609622023:0;sudo pacman -Syu
-: 1609622036:0;yay -Syu --devel
-: 1609622106:0;dust /var/cache/pacman
-: 1609622185:0;paccache -r
-: 1609622189:0;dust /var/cache/pacman
-: 1609622198:0;sudo pacman -Sc
-: 1609622213:0;dust /var/cache/pacman
-: 1609622394:0;cd 
-: 1609622401:0;cd Documents/raytracer-livecoding
-: 1609622402:0;l
-: 1609622407:0;vim src/kdtree.c
-: 1609622518:0;cd ../tmp/raytracer-project-base
-: 1609622520:0;fg
-: 1609622523:0;vim rt.c
-: 1609622557:0;make
-: 1609622597:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609622707:0;feh out.bmp
-: 1609682294:0;autorandr -l left-dual-screen-H
-: 1609682328:0;sudo pacman -Syu
-: 1609682566:0;yay -Syu --devel
-: 1609682583:0;cd Documents
-: 1609682583:0;l
-: 1609682586:0;cd projects
-: 1609682646:0;git clone https://github.com/sirlimo/ray.git
-: 1609682650:0;cd ray
-: 1609682651:0;l
-: 1609682662:0;vim src/kdtree.c
-: 1609682700:0;make
-: 1609682710:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609682712:0;l
-: 1609682714:0;feh out.bmp
-: 1609682727:0;make clean
-: 1609682731:0;tree
-: 1609682739:0;rm src/*d.d
-: 1609682741:0;rm src/*.d
-: 1609682742:0;make
-: 1609682748:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609682751:0;feh out.bmp
-: 1609682862:0;vim src/kdtree.c
-: 1609682899:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609682901:0;feh out.bmp
-: 1609682905:0;make clean
-: 1609682910:0;vim src/kdtree.c
-: 1609683075:0;l
-: 1609683089:0;fg
-: 1609683095:0;vim src/kdtree.c
-: 1609683161:0;make clean
-: 1609683162:0;make
-: 1609683171:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609683209:0;feh out.bmp
-: 1609683227:0;fg
-: 1609683233:0;vim src/kdtree.c
-: 1609683282:0;clang-format -i src/*.c
-: 1609683283:0;make
-: 1609683285:0;fg
-: 1609683364:0;make
-: 1609683366:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609683388:0;feh out.bmp
-: 1609683454:0;fg
-: 1609683613:0;make
-: 1609683615:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609683642:0;feh out.bmp
-: 1609683664:0;fg
-: 1609683683:0;make
-: 1609683685:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609683695:0;feh out.bmp
-: 1609683702:0;fg
-: 1609684007:0;make
-: 1609684009:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609684036:0;feh out.bmp
-: 1609684043:0;l
-: 1609684049:0;fg
-: 1609684068:0;make clean
-: 1609684070:0;make 
-: 1609684075:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609684103:0;feh out.bmp
-: 1609684153:0;make clean
-: 1609684155:0;make
-: 1609684158:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609684187:0;feh out.bmp
-: 1609684203:0;rm out.bmp
-: 1609684204:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609684232:0;feh out.bmp
-: 1609684234:0;fg
-: 1609684260:0;make clean
-: 1609684261:0;make
-: 1609684264:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609684271:0;feh out.bmp
-: 1609684288:0;fg
-: 1609684294:0;make
-: 1609684297:0;feh out.bmp
-: 1609684299:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609684328:0;feh out.bmp
-: 1609684331:0;fg
-: 1609684336:0;make
-: 1609684338:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609684360:0;feh out.bmp
-: 1609684374:0;fg
-: 1609684392:0;gst
-: 1609684397:0;make clean
-: 1609684420:0;git ls-files
-: 1609684426:0;tree
-: 1609684433:0;make
-: 1609684436:0;gst
-: 1609684442:0;make clean
-: 1609684443:0;gst
-: 1609684466:0;pwd
-: 1609684468:0;cd ../
-: 1609684469:0;l
-: 1609684477:0;cd tmp
-: 1609684569:0;git clone git@github.com:sirlimo/ray.git
-: 1609684588:0;cd
-: 1609684588:0;l
-: 1609684591:0;cd .ssh
-: 1609684592:0;l
-: 1609684654:0;ssh-keygen -a 100 -t ed25519
-: 1609684676:0;cat config
-: 1609684681:0;vim config
-: 1609684766:0;cat github.pub
-: 1609684808:0;cd -3
-: 1609684810:0;l
-: 1609684811:0;cd tmp
-: 1609684812:0;l
-: 1609684816:0;git clone git@github.com:sirlimo/ray.git
-: 1609684822:0;cd ray
-: 1609684822:0;l
-: 1609684834:0;cp ../../ray/src/* src
-: 1609684839:0;cp -r ../../ray/src/* src
-: 1609684841:0;gst
-: 1609684858:0;cp ../../ray/Makefile Makefile
-: 1609684860:0;make clean
-: 1609684861:0;make
-: 1609684863:0;gst
-: 1609684865:0;make clean
-: 1609684866:0;l
-: 1609684874:0;gst
-: 1609684879:0;git add -u
-: 1609684881:0;gst
-: 1609684906:0;git commit -m "work until 4 as tree height"
-: 1609684910:0;git push
-: 1609684916:0;gst
-: 1609684921:0;make clean
-: 1609684922:0;gst
-: 1609684927:0;l
-: 1609684929:0;fg
-: 1609684932:0;vim Makefile
-: 1609684950:0;make clean
-: 1609684952:0;l
-: 1609684953:0;gst
-: 1609684966:0;cp Makefile ../../ray/Makefile
-: 1609684976:0;git restore Makefile
-: 1609684983:0;cd ../../
-: 1609685069:0;l
-: 1609685072:0;cd ../
-: 1609685073:0;l
-: 1609685080:0;cd projects
-: 1609685081:0;l
-: 1609685083:0;l tmp
-: 1609685092:0;rm -rf tmp/*
-: 1609685096:0;l tmp
-: 1609685097:0;l
-: 1609685101:0;rmdir tmp
-: 1609685102:0;l
-: 1609685114:0;l loup.dallier-gire-2023
-: 1609685124:0;cp -r ray/src loup.dallier-gire-2023
-: 1609685130:0;cp -r ray/includes loup.dallier-gire-2023
-: 1609685144:0;cp -r ray/Makefile loup.dallier-gire-2023
-: 1609685147:0;l loup.dallier-gire-2023
-: 1609685162:0;cp ray/rt.c loup.dallier-gire-2023
-: 1609685163:0;l
-: 1609685165:0;l loup.dallier-gire-2023
-: 1609685170:0;l ray
-: 1609685176:0;cd loup.dallier-gire-2023
-: 1609685177:0;make
-: 1609685184:0;l
-: 1609685191:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609685219:0;feh out.bmp
-: 1609685243:0;gst
-: 1609685260:0;make clea
-: 1609685263:0;make clean
-: 1609685265:0;gst
-: 1609685271:0;rm out.bmp
-: 1609685282:0;git add includes/ src/ rt.c Makefile
-: 1609685283:0;gst
-: 1609685309:0;rm src/kdtree.c\~
-: 1609685313:0;git add 0u
-: 1609685319:0;git add -u
-: 1609685320:0;gst
-: 1609685330:0;rm includes/kdtree.h\~
-: 1609685334:0;git add -u
-: 1609685335:0;gst
-: 1609685486:0;vim rt.c
-: 1609685502:0;clang-format -i src/*.c
-: 1609685509:0;clang-format -i rt.c
-: 1609685511:0;vim rt.c
-: 1609685526:0;make
-: 1609685529:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609685556:0;feh out.bmp
-: 1609685563:0;fg
-: 1609685566:0;vim rt
-: 1609685571:0;vim rt.c
-: 1609756622:0;autorandr -l left-dual-screen-H
-: 1609757206:0;file -
-: 1609757213:0;file 1
-: 1609757223:0;file /dev/stdin
-: 1609757242:0;file /proc/self/fd/0
-: 1609757250:0;file /dev/pts/0
-: 1609757254:0;:q
-: 1609761264:0;cd Documents/projects/loup.dallier-gire-2023
-: 1609761265:0;l
-: 1609761269:0;gst
-: 1609761316:0;make clean
-: 1609761321:0;gst
-: 1609762417:0;vim src/kdtree.c
-: 1609763014:0;fg
-: 1609763082:0;make clean
-: 1609763084:0;make
-: 1609763088:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609763114:0;feh out.bmp
-: 1609763120:0;fg
-: 1609763375:0;make
-: 1609763379:0;make clean
-: 1609763380:0;make 
-: 1609763386:0;fg
-: 1609763399:0;make
-: 1609763403:0;fg
-: 1609763429:0;make
-: 1609763435:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609763460:0;fg
-: 1609763483:0;grep "kd_add" src/*
-: 1609763488:0;fg
-: 1609763503:0;make
-: 1609763507:0;fg
-: 1609763539:0;make
-: 1609763548:0;fg
-: 1609763568:0;make
-: 1609763573:0;fg
-: 1609763590:0;make
-: 1609763592:0;fg
-: 1609763717:0;make
-: 1609763722:0;fg
-: 1609763734:0;grep "object_list" src/*
-: 1609763742:0;grep "object_list" .c
-: 1609763745:0;grep "object_list" *.c
-: 1609763750:0;grep "object_list" ./
-: 1609763753:0;grep "object_list" ./*
-: 1609763758:0;fg
-: 1609763806:0;make
-: 1609763810:0;fg
-: 1609763834:0;make
-: 1609763837:0;make clean
-: 1609763838:0;make
-: 1609763844:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609763882:0;feh out.bmp
-: 1609763888:0;fg
-: 1609763939:0;make
-: 1609763942:0;fg
-: 1609764186:0;make
-: 1609764191:0;fg
-: 1609764230:0;make
-: 1609764233:0;make clean
-: 1609764234:0;make
-: 1609764236:0;fg
-: 1609764282:0;make
-: 1609764284:0;make clean
-: 1609764285:0;make
-: 1609764288:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609764322:0;fg
-: 1609764596:0;make
-: 1609764600:0;fg
-: 1609764611:0;make
-: 1609764614:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609764668:0;feh out.bmp
-: 1609764671:0;fg
-: 1609764790:0;make
-: 1609764794:0;make clean
-: 1609764795:0;make
-: 1609764797:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609764804:0;fg
-: 1609764836:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609764837:0;fg
-: 1609764840:0;make
-: 1609764841:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609764845:0;make clean
-: 1609764849:0;make
-: 1609764852:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609764864:0;fg
-: 1609764873:0;make clean
-: 1609764875:0;make
-: 1609764877:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609764880:0;l
-: 1609764882:0;feh out.bmp
-: 1609764883:0;fg
-: 1609764912:0;clang-format -i src/*.c
-: 1609764913:0;fg
-: 1609765437:0;make
-: 1609765439:0;fg
-: 1609765804:0;make
-: 1609765807:0;fg
-: 1609765813:0;make
-: 1609765816:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609765820:0;feh out.bmp
-: 1609765821:0;fg
-: 1609765828:0;make
-: 1609765829:0;feh out.bmp
-: 1609765831:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609765835:0;fg
-: 1609766890:0;make
-: 1609766892:0;feh out.bmp
-: 1609766894:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609766901:0;feh out.bmp
-: 1609766905:0;fg
-: 1609766912:0;feh out.bmp
-: 1609766914:0;make
-: 1609766916:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609766937:0;feh out.bmp
-: 1609766941:0;fg
-: 1609766982:0;make
-: 1609766983:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609767002:0;feh out.bmp
-: 1609767005:0;fg
-: 1609767109:0;make
-: 1609767113:0;fg
-: 1609767121:0;make
-: 1609767124:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609767143:0;feh out.bmp
-: 1609767145:0;fg
-: 1609767265:0;make
-: 1609767268:0;fg
-: 1609767288:0;make
-: 1609767291:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609767314:0;fg
-: 1609767331:0;make
-: 1609767333:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609767339:0;fg
-: 1609767347:0;make
-: 1609767348:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609767350:0;fg
-: 1609767365:0;make
-: 1609767366:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609767384:0;fg
-: 1609767433:0;make
-: 1609767434:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609767462:0;feh out.bmp
-: 1609767464:0;fg
-: 1609767540:0;gst
-: 1609767542:0;make clean
-: 1609767544:0;gst
-: 1609767557:0;fg
-: 1609767696:0;make clean
-: 1609767697:0;make
-: 1609767701:0;fg
-: 1609767718:0;make
-: 1609767722:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609767747:0;feh out.bmp
-: 1609767753:0;fg
-: 1609767776:0;make clean
-: 1609767778:0;gst
-: 1609767797:0;fg
-: 1609767953:0;make clean
-: 1609767955:0;make
-: 1609767959:0;fg
-: 1609768003:0;make
-: 1609768005:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609768024:0;fg
-: 1609768088:0;make
-: 1609768092:0;make clean
-: 1609768093:0;fg
-: 1609768100:0;make
-: 1609768108:0;fg
-: 1609768116:0;make
-: 1609768119:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609768227:0;fg
-: 1609768246:0;clang-format -i src/*.c
-: 1609768247:0;fg
-: 1609768380:0;make
-: 1609768384:0;fg
-: 1609768396:0;cd ../
-: 1609768398:0;l
-: 1609768422:0;diff -u ray/src/*.c loup.dallier-gire-2023/src/*.c
-: 1609768442:0;diff -u ray/rt.c loup.dallier-gire-2023/rt.c
-: 1609768466:0;fg
-: 1609768511:0;diff -u ray/src/kdtree.c loup.dallier-gire-2023/src/kdtree.c
-: 1609768541:0;fg
-: 1609768640:0;make
-: 1609768645:0;cd loup.dallier-gire-2023
-: 1609768646:0;make
-: 1609768649:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609768678:0;feh out.bmp
-: 1609768680:0;fg
-: 1609768696:0;diff -u ../ray/src/kdtree.c ../loup.dallier-gire-2023/src/kdtree.c
-: 1609768734:0;fg
-: 1609768742:0;gst
-: 1609768745:0;make clean
-: 1609768746:0;gst
-: 1609768752:0;git add -u
-: 1609768754:0;gst
-: 1609768756:0;rm out.bmp
-: 1609768758:0;fg
-: 1609768764:0;vim src/kdtree.c
-: 1609768902:0;make
-: 1609768904:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609768908:0;l
-: 1609768910:0;make
-: 1609768911:0;fg
-: 1609768936:0;make
-: 1609768940:0;fg
-: 1609768957:0;make
-: 1609768960:0;fg
-: 1609768969:0;make
-: 1609768972:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609768997:0;fg
-: 1609769016:0;make
-: 1609769017:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769025:0;fg
-: 1609769166:0;make
-: 1609769171:0;fg
-: 1609769178:0;make
-: 1609769180:0;fg
-: 1609769210:0;make
-: 1609769212:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769235:0;fg
-: 1609769255:0;make
-: 1609769256:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769286:0;fg
-: 1609769293:0;make
-: 1609769294:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769318:0;fg
-: 1609769345:0;make
-: 1609769347:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769374:0;fg
-: 1609769465:0;make
-: 1609769469:0;make clean
-: 1609769471:0;make
-: 1609769476:0;time ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769491:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769494:0;fg
-: 1609769504:0;make
-: 1609769509:0;make clean
-: 1609769510:0;make
-: 1609769513:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769609:0;fg
-: 1609769623:0;grep "kd_destroy" src/*.c
-: 1609769629:0;fg
-: 1609769665:0;make
-: 1609769668:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769734:0;fg
-: 1609769840:0;make
-: 1609769842:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769901:0;fg
-: 1609769917:0;make clean
-: 1609769918:0;make
-: 1609769921:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609769950:0;fg
-: 1609769970:0;make
-: 1609769974:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609770014:0;valgrind ./rt ~/Downloads/suzanne.obj out.bmp
-: 1609770659:0;fg
-: 1609770666:0;make
-: 1609770668:0;make clean
-: 1609770669:0;make
-: 1609770674:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609770734:0;fg
-: 1609770741:0;make
-: 1609770745:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609770812:0;fg
-: 1609770881:0;make clean
-: 1609770882:0;make
-: 1609770885:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609770934:0;fg
-: 1609771038:0;make clean
-: 1609771040:0;make
-: 1609771045:0;fg
-: 1609771049:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609771111:0;fg
-: 1609771152:0;make
-: 1609771153:0;fg
-: 1609771158:0;make
-: 1609771160:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609771162:0;fg
-: 1609771177:0;make
-: 1609771183:0;make clean
-: 1609771185:0;mk
-: 1609771187:0;make
-: 1609771192:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609771307:0;fg
-: 1609771342:0;make
-: 1609771344:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609771352:0;fg
-: 1609771361:0;make
-: 1609771362:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609771519:0;fg
-: 1609771532:0;l
-: 1609771541:0;cd ../../tmp
-: 1609771541:0;l
-: 1609771543:0;cd raytracer-project-base
-: 1609771544:0;l
-: 1609771549:0;vim Makefile
-: 1609771565:0;make clean
-: 1609771567:0;make
-: 1609771574:0;./rt ~/Downloads/suzanne.obj out.bmp
-: 1609771657:0;make clean
-: 1609771660:0;cd -
-: 1609771664:0;cd -2
-: 1609771665:0;l
-: 1609771668:0;gst
-: 1609771675:0;feh out.bmp
-: 1609771680:0;make clean
-: 1609771682:0;gst
-: 1609771685:0;git add -u
-: 1609771691:0;diff -u ../ray/src/kdtree.c ../loup.dallier-gire-2023/src/kdtree.c
-: 1609771747:0;fg
-: 1609771751:0;gst
-: 1609771775:0;git commit -m "fix memory leaks from the tree allocation"
-: 1609771782:0;git push
-: 1609771793:0;vim Makefile
-: 1609771808:0;gst
-: 1609771812:0;git add Makefile
-: 1609771830:0;git commit -m "remove asan from the compilation"
-: 1609771832:0;git push
-: 1609771861:0;gst
-: 1609771867:0;feh out.bmp
-: 1609777053:0;git tag -a submission-v1.0 -m 1.0
-: 1609777057:0;glog
-: 1609777065:0;git push --follow-tags
-: 1609778746:0;fg
-: 1609778762:0;vim includes/utils/refcnt.h
-: 1609778888:0;grep "refcnt" src/*.c
-: 1609778891:0;vim includes/utils/refcnt.h
-: 1609778903:0;grep "refcnt" src/utils/*.c
-: 1609778910:0;fg
-: 1609780246:0;:q
-: 1609783390:0;sudo pacman -Syu
-: 1609783449:0;yay -Syu --devel
-: 1609786284:0;cd Downloads
-: 1609786291:0;tar -xvf 2023-recrutement-cri-1.0.0-2023-recrutement-cri-1.0.0-myfirewall-provided-files.tar.bz2
-: 1609786292:0;l
-: 1609791490:0;cat Makefile
-: 1609791509:0;cd ../Documents/projects/o
-: 1609791511:0;cd ../Documents/projects/
-: 1609791512:0;l
-: 1609791518:0;git clone git@git.assistants.epita.fr:p/2023/2023-recrutement-cri/loup.dallier-2023-recrutement-cri.git
-: 1609791526:0;cat vars_and_quote.c
-: 1609791528:0;rm vars_and_quote.c
-: 1609791529:0;l
-: 1609791532:0;rm lexing.c
-: 1609791533:0;l
-: 1609791546:0;rm -rf ray
-: 1609791546:0;l
-: 1609791548:0;cd ../
-: 1609791549:0;l
-: 1609791567:0;l test
-: 1609791571:0;cd ../
-: 1609791578:0;cd Documents
-: 1609791583:0;rmdir test
-: 1609791584:0;l
-: 1609791592:0;rm -rf raytracer-livecoding
-: 1609791593:0;l
-: 1609791603:0;cd projects/loup.dallier-2023-recrutement-cri
-: 1609791603:0;l
-: 1609791610:0;cp ~/Downloads/Makefile ./
-: 1609791629:0;cp -r ~/Downloads/src ./
-: 1609791629:0;l
-: 1609791632:0;l src
-: 1609791639:0;l src/cli
-: 1609791649:0;l ~/Downloads
-: 1609791668:0;cd ~/Downloads
-: 1609791668:0;l
-: 1609791696:0;mv Grille.xlsx /windows/Users/loupd/Documents/
-: 1609791706:0;mv Autodiagnotic\ des\ rôles.docx /windows/Users/loupd/Documents/
-: 1609791707:0;l
-: 1609791719:0;rm 2023-recrutement-cri-1.0.0-2023-recrutement-cri-1.0.0-myfirewall-provided-files.tar.bz2
-: 1609791720:0;l
-: 1609791723:0;rm -rf src
-: 1609791725:0;rm Makefile
-: 1609791726:0;l
-: 1609791778:0;cat pre-commit-config.yaml.bck
-: 1609791800:0;tar -xvf piscine-2023-miscpre-commit-provided-files-3.2.1.tar
-: 1609791801:0;l
-: 1609791806:0;l pre-commit
-: 1609791825:0;cp pre-commit/.pre-commit-config.yaml ~/Documents/projects/loup.dallier-2023-recrutement-cri
-: 1609791839:0;cd ../Documents/projects/loup.dallier-2023-recrutement-cri
-: 1609791840:0;l
-: 1609791844:0;vim .gitignore
-: 1609791870:0;gst
-: 1609791874:0;l
-: 1609792158:0;cd ../
-: 1609792162:0;l
-: 1609792166:0;cd loup.dallier-asm-2023
-: 1609792174:0;l
-: 1609792348:0;cd my_strlen
-: 1609792349:0;l
-: 1609792353:0;vim my_strlen.S
-: 1609800077:0;fg
-: 1609800200:0;cd Documents/projects
-: 1609800201:0;l
-: 1609800258:0;git clone git@git.assistants.epita.fr:p/2023/piscine-2023/loup.dallier-piscine-2023.git
-: 1609800274:0;cd loup.dallier-piscine-
-: 1609800277:0;cd loup.dallier-piscine-2023
-: 1609800278:0;l
-: 1609800311:0;cd he
-: 1609800313:0;cd heap
-: 1609800314:0;l
-: 1609800316:0;cat Makefile
-: 1609800497:0;make
-: 1609800501:0;fg
-: 1609800507:0;make
-: 1609800508:0;l
-: 1609800516:0;make check
-: 1609800522:0;make clean
-: 1609800523:0;l
-: 1609800528:0;make check
-: 1609800530:0;fg
-: 1609800560:0;make
-: 1609800562:0;make clean
-: 1609800563:0;make
-: 1609800564:0;l
-: 1609800567:0;./check
-: 1609800584:0;gcc -o strlen my_strlen.o strlen_test.c
-: 1609800590:0;fg
-: 1609800642:0;make
-: 1609800648:0;fg
-: 1609800715:0;make clean
-: 1609800716:0;make
-: 1609800722:0;fg
-: 1609800784:0;make
-: 1609800789:0;fg
-: 1609801204:0;make
-: 1609801205:0;l
-: 1609801209:0;make clean
-: 1609801211:0;make
-: 1609801218:0;make clean
-: 1609801219:0;fg
-: 1609801236:0;make clean
-: 1609801238:0;make
-: 1609801240:0;fg
-: 1609801297:0;make
-: 1609801299:0;l
-: 1609801301:0;make clean
-: 1609801303:0;make
-: 1609801304:0;fg
-: 1609801308:0;make clean
-: 1609801309:0;make
-: 1609801310:0;l
-: 1609801316:0;fg
-: 1609801344:0;gcc -o strlen my_strlen.o strlen_test.o
-: 1609801353:0;gcc -o strlen my_strlen.o strlen_test.o -lcriterion
-: 1609801354:0;l
-: 1609801358:0;./strlen
-: 1609801362:0;fg
-: 1609801446:0;make
-: 1609801447:0;l
-: 1609801452:0;rm strlen
-: 1609801465:0;l
-: 1609801470:0;./my_strlen
-: 1609801547:0;fg
-: 1609801578:0;make
-: 1609801586:0;./my_strlen
-: 1609801589:0;fg
-: 1609801625:0;make
-: 1609801628:0;./my_strlen
-: 1609801634:0;fg
-: 1609801643:0;make
-: 1609801645:0;./my_strlen
-: 1609801646:0;fg
-: 1609801745:0;make
-: 1609801747:0;./my_strlen
-: 1609801749:0;fg
-: 1609801761:0;make
-: 1609801762:0;./my_strlen
-: 1609801772:0;./my_strlen -v
-: 1609801778:0;./my_strlen --verbose
-: 1609801783:0;fg
-: 1609801803:0;make
-: 1609801805:0;./my_strlen --verbose
-: 1609801807:0;fg
-: 1609801839:0;make
-: 1609801840:0;./my_strlen --verbose
-: 1609801844:0;fg
-: 1609801879:0;make
-: 1609801880:0;./my_strlen --verbose
-: 1609801882:0;fg
-: 1609801900:0;make
-: 1609801901:0;./my_strlen --verbose
-: 1609801908:0;./my_strlen
-: 1609801909:0;fg
-: 1609801946:0;make
-: 1609801947:0;fg
-: 1609801952:0;make
-: 1609801956:0;make clean
-: 1609801957:0;make
-: 1609801960:0;l
-: 1609801964:0;make clena
-: 1609801966:0;make clean
-: 1609801970:0;make
-: 1609801973:0;l
-: 1609801975:0;fg
-: 1609801990:0;make
-: 1609801993:0;fg
-: 1609802012:0;make
-: 1609802014:0;make clean
-: 1609802016:0;make
-: 1609802020:0;fg
-: 1609802029:0;make
-: 1609802033:0;make clean
-: 1609802033:0;make
-: 1609802034:0;fg
-: 1609802049:0;l
-: 1609802052:0;fg
-: 1609802075:0;make
-: 1609802077:0;fg
-: 1609802091:0;make
-: 1609802095:0;l
-: 1609802097:0;fg
-: 1609802128:0;make
-: 1609802130:0;l
-: 1609802132:0;./my_strlen
-: 1609802136:0;make clean
-: 1609802138:0;make
-: 1609802141:0;./my_strlen
-: 1609802143:0;fg
-: 1609802156:0;make
-: 1609802161:0;make clean
-: 1609802162:0;fg
-: 1609802172:0;make
-: 1609802174:0;fg
-: 1609802212:0;make
-: 1609802214:0;fg
-: 1609802235:0;make
-: 1609802239:0;make clean
-: 1609802240:0;make
-: 1609802242:0;fg
-: 1609802490:0;make
-: 1609802491:0;fg
-: 1609802502:0;make
-: 1609802506:0;make clean
-: 1609802507:0;make
-: 1609802509:0;fg
-: 1609802520:0;make
-: 1609802523:0;fg
-: 1609802562:0;make
-: 1609802568:0;make clean
-: 1609802570:0;make
-: 1609802572:0;fg
-: 1609802604:0;make
-: 1609802608:0;make clean
-: 1609802609:0;make
-: 1609802611:0;fg
-: 1609802621:0;make
-: 1609802623:0;make clean
-: 1609802624:0;make
-: 1609802625:0;fg
-: 1609802630:0;make
-: 1609802632:0;fg
-: 1609802656:0;make
-: 1609802659:0;make clean
-: 1609802661:0;make
-: 1609802663:0;fg
-: 1609802677:0;make
-: 1609802680:0;make clean
-: 1609802681:0;make
-: 1609802684:0;make clean
-: 1609802684:0;fg
-: 1609802690:0;make clean
-: 1609802692:0;make
-: 1609802694:0;fg
-: 1609802709:0;make
-: 1609802712:0;make clean
-: 1609802713:0;make
-: 1609802715:0;fg
-: 1609802748:0;make
-: 1609802749:0;make clena
-: 1609802751:0;make clean
-: 1609802752:0;make
-: 1609802754:0;fg
-: 1609802830:0;:q
-: 1609802871:0;make
-: 1609802874:0;make clean
-: 1609802875:0;make
-: 1609802876:0;fg
-: 1609802892:0;make
-: 1609802896:0;make celan
-: 1609802898:0;make clena
-: 1609802900:0;make clean
-: 1609802901:0;make
-: 1609803108:0;fg
-: 1609803138:0;make
-: 1609803140:0;fg
-: 1609803164:0;make
-: 1609803166:0;fg
-: 1609803172:0;make
-: 1609803176:0;fg
-: 1609803201:0;make
-: 1609803202:0;fg
-: 1609803207:0;make
-: 1609803208:0;fg
-: 1609803260:0;make
-: 1609803261:0;fg
-: 1609803276:0;make
-: 1609803280:0;fg
-: 1609803341:0;make
-: 1609803343:0;fg
-: 1609803378:0;make
-: 1609803381:0;make clean
-: 1609803382:0;make
-: 1609803383:0;fg
-: 1609803733:0;make
-: 1609803737:0;make clean
-: 1609803739:0;make
-: 1609803740:0;fg
-: 1609803752:0;make
-: 1609803755:0;fg
-: 1609803882:0;make
-: 1609803885:0;fg
-: 1609803889:0;make
-: 1609803983:0;fg
-: 1609803989:0;:q
-: 1609849902:0;autorandr -l left-dual-screen-H
-: 1609849919:0;sudo pacman -Syu
-: 1609850040:0;yay -Syu --devel
-: 1609850093:0;sudo pacman -S postgresql
-: 1609850288:0;sudo pacman -S code
-: 1609850313:0;code
-: 1609850415:0;zshconfig
-: 1609850470:0;reload
-: 1609850490:0;initdb --locale "$LANG"
-: 1609850502:0;initdb --locale "$LANG" -E UTF8
-: 1609850513:0;rm -rf postgres_data
-: 1609850516:0;initdb --locale "$LANG" -E UTF8
-: 1609850541:0;postgres -k $PGHOST
-: 1609850616:0;psql postgres
-: 1609851427:0;l $PGHOST
-: 1609851984:0;cd Downloads/
-: 1609851985:0;l
-: 1609851991:0;cd ../Documents/projects
-: 1609852012:0;git clone git@git.assistants.epita.fr:p/2023/sql-2023/loup.dallier-sql-2023.git
-: 1609852027:0;cd loup.dallier-sql-2023
-: 1609852029:0;l
-: 1609852081:0;pm
-: 1609855231:0;sudo pacman -S gnome-keyring libsecret
-: 1609855420:0;psql -d tutorial_1 -U loup
-: 1609855460:0;code .
-: 1609855728:0;cd Documents/projects/loup.dallier-sql-2023
-: 1609855730:0;code .
-: 1609855819:0;autorandr -l external-H
-: 1609855839:0;l Downloads
-: 1609855866:0;cd Downloads
-: 1609855872:0;code sql-2023-1.0.4-script.sql
-: 1609856087:0;pm
-: 1609856120:0;:q
-: 1609856498:0;psql postgres
-: 1609856844:0;fc-cache
-: 1609856853:0;fc-cache list
-: 1609856860:0;man fc-cache
-: 1609856878:0;fc-list
-: 1609856895:0;fc-list | grep "nerd"
-: 1609856900:0;fc-list | grep "Nerd"
-: 1609856907:0;alaconfig
-: 1609860169:0;:q
-: 1609875829:0;cd Documents/projects/loup.dallier-sql-2023
-: 1609875830:0;l
-: 1609875835:0;cat test.sql
-: 1609875838:0;rm test.sql
-: 1609875865:0;tar -xvf ~/Downloads/sql-2023-sqltraffic_offense-provided-files-1.0.2.tar
-: 1609875866:0;l
-: 1609875869:0;cd traffic_offense
-: 1609875870:0;l
-: 1609875873:0;cat data.sql
-: 1609875967:0;cat schema.sql
-: 1609876120:0;psql postgres
-: 1609876166:0;:q
-: 1609876230:0;psql
-: 1609876235:0;psql postgres
-: 1609879313:0;gloga
-: 1609879321:0;gst
-: 1609879362:0;git tag -a exercises-traffic_offense-v1.0 -m 1.0
-: 1609879370:0;git push --follow-tags
-: 1609879524:0;git status
-: 1609879547:0;git add traffic_offense/req01.sql
-: 1609879551:0;git commit
-: 1609879591:0;git tag -a exercises-traffic_offense-v1.1 -m 1.1
-: 1609879600:0;git push --follow-tags
-: 1609879900:0;tar -xvf ~/Downloads/sql-2023-sqlworld_of_yakraft-provided-files-1.0.6.tar
-: 1609879901:0;l
-: 1609879915:0;psql postgres
-: 1609880328:0;gst
-: 1609880332:0;git add world_of_yakraft/req01.sql
-: 1609880333:0;gst
-: 1609880339:0;git commit
-: 1609880480:0;gst
-: 1609880497:0;git commit
-: 1609880839:0;gst
-: 1609880842:0;git add world_of_yakraft/req03.sql
-: 1609880845:0;git commit
-: 1609880971:0;git add world_of_yakraft/req04.sql
-: 1609880975:0;git commit
-: 1609880992:0;gst
-: 1609880997:0;glog
-: 1609881181:0;git add world_of_yakraft/req05.sql
-: 1609881228:0;l
-: 1609881234:0;gst
-: 1609881250:0;git commit
-: 1609881340:0;glog
-: 1609882038:0;gst
-: 1609882121:0;git add world_of_yakraft/req06.sql
-: 1609882124:0;git commit
-: 1609882201:0;gst
-: 1609882207:0;git add world_of_yakraft/req07.sql
-: 1609882209:0;gst
-: 1609882212:0;git commit
-: 1609882230:0;gst
-: 1609882258:0;git restore --staged world_of_yakraft/req0
-: 1609882272:0;git restore --staged world_of_yakraft/req07.sql
-: 1609882274:0;gst
-: 1609884034:0;git add world_of_yakraft/req07.sql
-: 1609884043:0;git commit
-: 1609884077:0;glog
-: 1609885357:0;gst
-: 1609885361:0;git add world_of_yakraft/req08.sql
-: 1609885364:0;git commit
-: 1609887184:0;gst
-: 1609887191:0;git add world_of_yakraft/req10.sql
-: 1609887194:0;git commit
-: 1609887208:0;gst
-: 1609887230:0;git tag -a exercises-world_of_yakraft-v1.0 -m 1.0
-: 1609887235:0;git push --follow-tags
-: 1609887546:0;gst
-: 1609887549:0;git push
-: 1609889165:0;:q
-: 1609936584:0;autorandr -l left-dual-screen-H
-: 1609936592:0;disco
-: 1609936594:0;:q
-: 1609936707:0;cd Documents/projects/loup.dallier-sql-2023
-: 1609936708:0;l
-: 1609936853:0;postgres -k $PGHOST
-: 1609936914:0;code 
-: 1609938408:0;gst
-: 1609938419:0;git add world_of_yakraft/req12.sql
-: 1609938424:0;git commit
-: 1609938447:0;git add world_of_yakraft/req13.sql
-: 1609938451:0;git commit
-: 1609938467:0;git add world_of_yakraft/req14.sql 
-: 1609938469:0;git commit 
-: 1609939004:0;gst
-: 1609939011:0;git add world_of_yakraft/req15.sql
-: 1609939013:0;git commit
-: 1609939044:0;gst
-: 1609939049:0;git push
-: 1609939419:0;gst
-: 1609939421:0;git add world_of_yakraft/req16.sql
-: 1609939423:0;git commit
-: 1609942816:0;gst
-: 1609942823:0;git add world_of_yakraft/req17.sql
-: 1609942825:0;git commit
-: 1609944777:0;autorandr -l left-dual-screen-H
-: 1609944827:0;code
-: 1609944847:0;postgres -k $PGHOST
-: 1609947688:0;gst
-: 1609947702:0;git tag -a exercises-world_of_yakraft-v1.1 -m 1.1
-: 1609947725:0;git push --follow-tags
-: 1609947813:0;:q
-: 1609947968:0;tar -xvf ~/Downloads/sql-2023-sqllab_management-provided-files-1.0.6.tar
-: 1609947978:0;psql postgres
-: 1609948745:0;gst
-: 1609948752:0;git add lab_management/req03.sql
-: 1609948755:0;git commit
-: 1609948767:0;gst
-: 1609950108:0;psql lab_management
-: 1609951173:0;i3config
-: 1609951183:0;vim .config/i3status
-: 1609951206:0;;q
-: 1609951208:0;:q
-: 1609951759:0;psql lab_management
-: 1609951980:0;gst
-: 1609951982:0;git push
-: 1609955539:0;which alacritty
-: 1609955571:0;:q
-: 1609955750:0;gst
-: 1609955784:0;git push
-: 1609955793:0;glog
-: 1609956095:0;sudo pacman -Syu
-: 1609956127:0;yay -Syu --devel
-: 1609956700:0;gst
-: 1609956726:0;git tag -a exercises-lab_management-v1.0 -m 1.0
-: 1609956730:0;git push --follow-tags
-: 1609957030:0;git tag -a exercises-lab_management-v1.1 -m 1.1
-: 1609957033:0;git push --follow-tags
-: 1609957341:0;:q
-: 1609957352:0;autorandr -l external-H
-: 1609957647:0;gst
-: 1609957651:0;glog
-: 1609957669:0;git log
-: 1609957699:0;gst
-: 1609957704:0;git commit
-: 1609957726:0;gst
-: 1609957813:0;git tag -a exercises-lab_management-v1.2 -m 1.2
-: 1609957817:0;git push --follow-tags
-: 1609958085:0;tar -xvf ~/Downloads/sql-2023-sqlmy_tower-provided-files-1.0.6.tar
-: 1609958100:0;psql lab_management
-: 1609958108:0;psql postgres
-: 1609961471:0;:q
-: 1609963208:0;cd Documents
-: 1609963211:0;l
-: 1609963213:0;cd projects
-: 1609963213:0;l
-: 1609963218:0;cd loup.dallier-gire-2023
-: 1609963219:0;l
-: 1609963222:0;gst
-: 1609963319:0;l
-: 1609963320:0;gst
-: 1609963324:0;feh out.png
-: 1609963328:0;make
-: 1609963330:0;l
-: 1609963332:0;make clean
-: 1609963333:0;l
-: 1609963336:0;make
-: 1609963340:0;make clean
-: 1609963343:0;l ~/Downloads
-: 1609963367:0;vim src/utils/refcnt.c
-: 1609970106:0;:q
-: 1610013836:0;autorandr -l external-H
-: 1610013976:0;sudo pacman -syu
-: 1610013983:0;sudo pacman -Syu
-: 1610013992:0;yay -Syu --devel
-: 1610013997:0;:q
-: 1610015116:0;paccache -r
-: 1610015139:0;dust /var/cache/pacman
-: 1610015187:0;pm
-: 1610028883:0;cd
-: 1610028887:0;l Downloads
-: 1610028941:0;rm Downloads/OneDrive_1_1-7-2021.zip
-: 1610028961:0;l Do
-: 1610028965:0;l Downloads
-: 1610029003:0;mv Downloads/TD_IMASI.pdf /windows/Users/loupd/Documents/IMASI/
-: 1610029027:0;mv Downloads/tp_1_eric.ipynb /windows/Users/loupd/Documents/IMASI
-: 1610031793:0;pm
-: 1610037298:0;l Downloads
-: 1610037347:0;mv Downloads/video.mp4 /windows/Users/loupd/Documents/FPVA/07-01-2021.mp4
-: 1610037381:0;mv Downloads/video\ \(1\).mp4 /windows/Users/loupd/Documents/IMASI/07-01-2021.mp4
-: 1610039637:0;i3config
-: 1610039682:0;:q
-: 1610039742:0;;
-: 1610039743:0;:q
-: 1610039744:0;;q
-: 1610039745:0;:q
-: 1610040594:0;l Downloads
-: 1610040631:0;mv Downloads/video.mp4 /windows/Users/loupd/Documents/IMASI/07-01-2021_2.mp4 
-: 1610040641:0;dust
-: 1610040656:0;rm -rf .cache/*
-: 1610040662:0;dust
-: 1610040696:0;:q
-: 1610045019:0;htop
-: 1610045074:0;:q
-: 1610051141:0;cd /windows/Users/loupd/Desktop
-: 1610051141:0;l
-: 1610051150:0;cat Connexion\ Advisor\ -\ We\ are\ Advisor\ Study\ Advisor.URL
-: 1610051988:0;:q
-: 1610053780:0;sudo pacman -S redshift
-: 1610053787:0;redshift
-: 1610053816:0;redshift -P -O 1000
-: 1610053822:0;redshift -P -O 10000
-: 1610053832:0;redshift -P -O 25000
-: 1610053839:0;redshift -P -O 5000
-: 1610053906:0;:q
-: 1610053959:0;redshift -l N48°51'12'':E2°20'55''
-: 1610057536:0;:q
-: 1610101494:0;autorandr -l external-H
-: 1610101501:0;:q
-: 1610115287:0;cd Documents/projects/loup.dallier-asm-2023
-: 1610115288:0;l
-: 1610115295:0;cd my_strlen
-: 1610115295:0;l
-: 1610115297:0;make
-: 1610115305:0;l
-: 1610115323:0;vim my_strlen.S
-: 1610115335:0;:q
-: 1610115349:0;cd Documents/projects
-: 1610115350:0;l
-: 1610115353:0;cd loup.dallier-asm-2023
-: 1610115404:0;make
-: 1610115406:0;l
-: 1610115409:0;fg
-: 1610115504:0;make
-: 1610115507:0;fg
-: 1610115589:0;make
-: 1610115591:0;fg
-: 1610115598:0;make
-: 1610115600:0;fg
-: 1610115882:0;make
-: 1610115891:0;fg
-: 1610115905:0;make
-: 1610115908:0;fg
-: 1610115944:0;make
-: 1610115947:0;fg
-: 1610115958:0;make
-: 1610115961:0;fg
-: 1610116114:0;l
-: 1610116119:0;cd my_strlen
-: 1610116120:0;l
-: 1610116122:0;vim Makefile
-: 1610116140:0;l
-: 1610116146:0;gcc -S strlen_test.c
-: 1610116147:0;l
-: 1610116154:0;vim strlen_test.s
-: 1610116700:0;make
-: 1610116704:0;fg
-: 1610116716:0;make
-: 1610116718:0;fg
-: 1610116724:0;make
-: 1610116726:0;fg
-: 1610116735:0;make
-: 1610116738:0;fg
-: 1610116749:0;make
-: 1610116753:0;fg
-: 1610116767:0;make
-: 1610116774:0;fg
-: 1610116799:0;make
-: 1610116803:0;fg
-: 1610116816:0;make
-: 1610116825:0;fg
-: 1610116883:0;make
-: 1610116886:0;fg
-: 1610116894:0;make
-: 1610116897:0;fg
-: 1610116909:0;make
-: 1610116912:0;fg
-: 1610116924:0;make
-: 1610116926:0;fg
-: 1610116930:0;make
-: 1610116937:0;fg
-: 1610116948:0;make
-: 1610116957:0;fg
-: 1610116990:0;make
-: 1610116995:0;fg
-: 1610117004:0;make
-: 1610117007:0;fg
-: 1610117021:0;make
-: 1610117022:0;fg
-: 1610117030:0;make
-: 1610117031:0;fg
-: 1610117038:0;make
-: 1610117040:0;fg
-: 1610117071:0;l
-: 1610117083:0;mv my_strlen.S my_strlen.s
-: 1610117085:0;make
-: 1610117089:0;fg
-: 1610117115:0;make
-: 1610117117:0;fg
-: 1610117145:0;make
-: 1610117147:0;fg
-: 1610117154:0;make
-: 1610117165:0;jobs
-: 1610117175:0;kill %2
-: 1610117177:0;fg
-: 1610117195:0;make
-: 1610117197:0;fg
-: 1610117219:0;make
-: 1610117220:0;fg
-: 1610117351:0;make
-: 1610117353:0;fg
-: 1610122506:0;:q
-: 1610126854:0;autorandr -l external-H
-: 1610126865:0;sudo pacman -Syu
-: 1610126931:0;:q
-: 1610126934:0;;q
-: 1610126936:0;:q
-: 1610126967:0;cd Documents/projects
-: 1610126973:0;cd loup.dallier-asm-2023
-: 1610126974:0;l
-: 1610126977:0;gst
-: 1610126984:0;cd my_str
-: 1610126987:0;cd my_strlen
-: 1610126989:0;l
-: 1610126999:0;rm strlen_test.s
-: 1610127004:0;make clean
-: 1610127007:0;vim Makefile
-: 1610127026:0;mv my_strlen.s my_strlen.S
-: 1610127027:0;l
-: 1610127030:0;gst
-: 1610127036:0;vim my_strlen.S
-: 1610127240:0;l
-: 1610127249:0;make
-: 1610127254:0;vim Makefile
-: 1610127311:0;vim strlen_test.c
-: 1610127333:0;make
-: 1610127336:0;fg
-: 1610127355:0;vim strlen_test.c
-: 1610127390:0;vim Makefile
-: 1610127406:0;vim my_strlen.S
-: 1610127474:0;make
-: 1610127483:0;vim strlen_test.c
-: 1610127529:0;make
-: 1610127887:0;vim my_strlen.S
-: 1610127977:0;make
-: 1610127985:0;jobs
-: 1610127996:0;kill %2
-: 1610128008:0;make
-: 1610128013:0;kill %2
-: 1610128015:0;fg
-: 1610128045:0;make
-: 1610128049:0;fg
-: 1610128054:0;make
-: 1610128059:0;kill %2
-: 1610128061:0;fg
-: 1610128092:0;make
-: 1610128097:0;fg
-: 1610128102:0;make
-: 1610128108:0;kill %2
-: 1610128111:0;fg
-: 1610128180:0;make
-: 1610128185:0;kill %2
-: 1610128189:0;fg
-: 1610128232:0;make
-: 1610128238:0;kill %2
-: 1610128268:0;fg
-: 1610128309:0;make
-: 1610128318:0;fg
-: 1610128390:0;make
-: 1610128396:0;fg
-: 1610128408:0;make
-: 1610128415:0;fg
-: 1610128421:0;make
-: 1610128425:0;fg
-: 1610128434:0;make
-: 1610128436:0;fg
-: 1610128474:0;make
-: 1610128475:0;fg
-: 1610128508:0;make
-: 1610128535:0;fg
-: 1610128543:0;make
-: 1610128545:0;fg
-: 1610128556:0;l
-: 1610128562:0;make clean
-: 1610128564:0;gst
-: 1610128572:0;git add my_strlen.S
-: 1610128573:0;gst
-: 1610128578:0;git commit
-: 1610128640:0;git tag -a exercises-my_strlen-v1.0
-: 1610128650:0;git push --follow-tags
-: 1610128716:0;man 3 strcpy
-: 1610128772:0;cp Makefile ../my_strcp
-: 1610128784:0;cd ../my_strc
-: 1610128788:0;cd ../my_strcp
-: 1610128790:0;l
-: 1610128808:0;mv ../my_strcp ../my_strcpy
-: 1610128814:0;cd ../my_strcpy
-: 1610128815:0;l
-: 1610128829:0;vim strcpy_test.c
-: 1610128926:0;man 3 strcpy
-: 1610129117:0;fg
-: 1610129517:0;vim my_strcpy.S
-: 1610129713:0;man 3 strcpy
-: 1610129809:0;zshconfig
-: 1610129820:0;vim ~/.zshenv
-: 1610129830:0;reload
-: 1610129834:0;man 3 strcpy
-: 1610129907:0;make
-: 1610129910:0;fg
-: 1610129937:0;make
-: 1610129940:0;fg
-: 1610129948:0;make
-: 1610129950:0;fg
-: 1610129959:0;make
-: 1610129967:0;fg
-: 1610130010:0;make
-: 1610130016:0;fg
-: 1610130036:0;make
-: 1610130038:0;fg
-: 1610130076:0;make
-: 1610130078:0;fg
-: 1610130212:0;make
-: 1610130217:0;fg
-: 1610130224:0;make
-: 1610130225:0;fg
-: 1610130239:0;make
-: 1610130271:0;fg
-: 1610130277:0;make
-: 1610130281:0;fg
-: 1610131263:0;make
-: 1610131264:0;fg
-: 1610131495:0;make
-: 1610131498:0;fg
-: 1610226691:0;autorandr -l external-H
-: 1610226692:0;;q
-: 1610226694:0;:q
-: 1610226727:0;history
-: 1610226730:0;:q
-: 1610245345:0;sudo pacman -Syu
-: 1610245377:0;yay -Syu --devel
-: 1610245561:0;journalctl
-: 1610245767:0;journalctl | grep "DNSSEC"
-: 1610245814:0;journalctl
-: 1610245831:0;;q
-: 1610245833:0;:q
-: 1610245862:0;ping 8.8.8.8
-: 1610245876:0;ping www.google.com
-: 1610245902:0;ping www.facebook.com
-: 1610245926:0;ping epita.fr
-: 1610245955:0;:q
-: 1610246725:0;pm
-: 1610246745:0;:q
-: 1610246840:0;autorandr -l left-dual-screen-H
-: 1610246844:0;:q
-: 1610293724:0;autorandr -l left-dual-screen-H
-: 1610301282:0;sudo pacman -Syu
-: 1610301441:0;autorandr -l left-dual-screen-H
-: 1610301471:0;sudo pacman -Syu
-: 1610301479:0;yay -Syu --devel
-: 1610301488:0;sudo pacman -Qtdq
-: 1610301494:0;paccache -r
-: 1610302434:0;pm
-: 1610305321:0;yay -S shadow-beta
-: 1610307309:0;yay -Q shadow-beta
-: 1610307319:0;dust
-: 1610307374:0;pacman -Q shadow
-: 1610307418:0;pacman -Q gcc
-: 1610307437:0;:q
-: 1610308557:0;autorandr -l left-dual-screen-H
-: 1610308573:0;sudo pacman -Qtdq
-: 1610308629:0;sudo pacman -Rns $(sudo pacman -Qtdq)
-: 1610308638:0;paccache -r
-: 1610308643:0;dust
-: 1610308659:0;rm -rf .cache/*
-: 1610308683:0;pacman -Q
-: 1610308727:0;cd /var/cache/pacman
-: 1610308728:0;dust
-: 1610308756:0;:q
-: 1610308789:0;sudo pacman -Syu
-: 1610308798:0;:q
-: 1610315421:0;autorandr -l left-dual-screen-H
-: 1610315447:0;htop
-: 1610315488:0;sudo pacman -Q
-: 1610315500:0;sudo pacman -Syu
-: 1610315509:0;yay -Syu --devel
-: 1610315555:0;zshconfig
-: 1610315674:0;reload
-: 1610315681:0;update-mirrors
-: 1610315689:0;zshconfig
-: 1610315700:0;reload
-: 1610315705:0;update-mirrors
-: 1610315723:0;zshconfig
-: 1610315735:0;reload
-: 1610315744:0;update-mirrors
-: 1610315758:0;zshconfig
-: 1610315862:0;vim -
-: 1610315890:0;vim .zshenv -
-: 1610315897:0;vim -h
-: 1610316027:0;vim --
-: 1610316037:0;vim --\
-: 1610316040:0;vim --
-: 1610316060:0;vim .zshenv -- .zshenv
-: 1610316075:0;vim -- .zshenv
-: 1610316091:0;vim .zshenv; .zshenv
-: 1610316101:0;zshconfig
-: 1610316163:0;zshconfig .zshenv
-: 1610316258:0;zshconfig
-: 1610316265:0;zshon
-: 1610316269:0;zshconfig
-: 1610322777:0;journalctl
-: 1610322933:0;sudo journalctl -xe
-: 1610322952:0;journalctl | most
-: 1610401786:0;sudo pacman -Syu
-: 1610401803:0;autorandr -l left-dual-screen-H
-: 1610401807:0;:q
-: 1610401840:0;cd Documents
-: 1610401846:0;git clone git@github.com:Sneerow/dotfiles.git
-: 1610401857:0;cd dotfiles
-: 1610401858:0;l
-: 1610401866:0;cd .config
-: 1610401867:0;l
-: 1610401876:0;l alacritty
-: 1610401887:0;cp -r alacritty ~/Documents/dotfiles
-: 1610401890:0;l
-: 1610401903:0;cp -r signatures ~/Documents/dotfiles
-: 1610401909:0;l test
-: 1610401915:0;rm -rf test
-: 1610401915:0;l
-: 1610401930:0;cp -r vim ~/Documents/dotfiles
-: 1610401940:0;cp -r zsh ~/Documents/dotfiles
+: 1619261251:0;java -jar OptiFine_1.16.4_HD_U_G7.jar
+: 1619261372:0;echo $XDG_DATA_HOME
+: 1619261649:0;cd .minecraft
+: 1619261654:0;cd versions
+: 1619430794:0;git clone git@git.assistants.epita.fr:p/2023/recruitment-yaka-2023/loup.dallier-recruitment-yaka-2023.git
+: 1619430924:0;touch README
+: 1619430931:0;code
+: 1619430949:0;code .
+: 1619431030:0;git clone git@github.com:AloisH/spider.git
+: 1619431136:0;cp spider/Makefile.am ./loup.dallier-recruitment-yaka-2023
+: 1619431145:0;cp spider/configure.ac ./loup.dallier-recruitment-yaka-2023
+: 1619431154:0;cp spider/autogen.sh ./loup.dallier-recruitment-yaka-2023
+: 1619431380:0;cp spider/lib/json.hpp ./loup.dallier-recruitment-yaka-2023
+: 1619431673:0;cp ~/Downloads/clang-format ./.clang-format
+: 1619431686:0;cp ~/Downloads/.pre-commit-config.yaml ./
+: 1619431738:0;cp ../spider/lib/json.hpp ./
+: 1619431805:0;pre-commit install
+: 1619431928:0;cp ~/Downloads/json.hpp ./lib/json.hpp
+: 1619432790:0;./autoconf
+: 1619432795:0;autoconf
+: 1619434265:0;man diff
+: 1619434290:0;diff -q ~/Downloads/Makefile.am ./Makefile.am
+: 1619434303:0;diff -u ~/Downloads/Makefile.am ./Makefile.am
+: 1619434399:0;diff -u ~/Downloads/configure.ac ./configure.ac
+: 1619434434:0;cd ../spider
+: 1619434643:0;cd loup.dallier-recruitment-yaka-2023
+: 1619438006:0;leodagan
+: 1619438023:0;leodagan --help
+: 1619438192:0;leodagan mail
+: 1619442236:0;gcov
+: 1619444464:0;pre-commit --help
+: 1619444480:0;man pre-commit
+: 1619444491:0;pre-commit run --al-files
+: 1619444499:0;pre-commit run --all-files
+: 1619444582:0;which clang-format
+: 1619446149:0;cd Bin
+: 1619446431:0;man ln
+: 1619446491:0;ln -s /home/loup/Bin/clion-2021.1.1/bin/clion.sh ~/.local/bin/clion
+: 1619447215:0;rm -rf event-sound-cache.tdb.dcfada9f08b4475f9db56ba2c01ff583.x86_64-pc-linux-gnu evolution fontconfig gitstatus gnome-calculator gnome-desktop-thumbnailer google-chrome gtk-3.0 JetBrains JNA main.kts.compiled.cache mesa_shader_cache mozilla p10k-dump-loup.zsh p10k-dump-loup.zsh.zwc p10k-instant-prompt-loup.zsh p10k-instant-prompt-loup.zsh.zwc p10k-loup paru pip pre-commit spotify/ thumbnails thunderbird vim vscode-cpptools
+: 1619447884:0;git rm --cached src/assistant/assistant.cc
+: 1619448111:0;git commit
+: 1619448327:0;gl
+: 1619448591:0;git commit -m "misc: add config.h generated files to .gitignore"
+: 1619448752:0;git commit -m "parsing: add base for assistant class and its (de)serialization"
+: 1619457587:0;make tests
+: 1619460462:0;GTEST_COLOR=1 ./testrunner
+: 1619460693:0;make cehck
+: 1619460886:0;automake --add-missing test-driver
+: 1619461015:0;make test
+: 1619468104:0;./recruitement
+: 1619472648:0;git add src/assistant/
+: 1619472691:0;git commit -m "parsing: change the organization in assistant class files"
+: 1619472709:0;git add src/project/
+: 1619472739:0;git commit -m "parsing: add base implem for project (config in json file) class"
+: 1619472752:0;git add src/student/
+: 1619472787:0;git commit -m "parsing: add base implem for student class (serialize and deserialize from json)"
+: 1619472906:0;git commit -m "parsing: begin json parsing"
+: 1619472934:0;git commit -m "add all files needed to compile until now"
+: 1619472956:0;git restore --staged src/main.cc
+: 1619473047:0;./testrunner
+: 1619473055:0;./testrunner --gtest_color=yes
+: 1619474538:0;maek
+: 1619478427:0;git commit -m "build_system: add config.hpp to sources"
+: 1619478438:0;git diff src/assistant/
+: 1619478452:0;git add src/assistant/assistant.cc
+: 1619478478:0;git add src/assistant/assistant.hpp
+: 1619478503:0;git commit -m "assistant: implem of to_string and << overloading"
+: 1619478509:0;git add src/assistant/assistant.hh
+: 1619478531:0;git commit -m "assistant: add default constructor"
+: 1619478560:0;git diff src/project/project.hh
+: 1619478569:0;git add src/project/project.hh
+: 1619478581:0;git commit -m "project: add defautl constructor"
+: 1619478586:0;git diff src/project/project.hpp
+: 1619478611:0;git add src/project/project.hpp
+: 1619478624:0;git commit -m "project: add to_string implem"
+: 1619478632:0;git add src/student/student.hpp
+: 1619478644:0;git commit -m "student: add to_string implem"
+: 1619478651:0;git add src/student/student.hh
+: 1619478669:0;git commit -m "student: add default constructor and << overloading"
+: 1619478684:0;git diff src/config/config.hh
+: 1619478699:0;git add src/config/config.hh
+: 1619478732:0;git commit -m "parser: implem a more complete ctor, and add declaration for templated method"
+: 1619478740:0;git diff src/config/config.cc
+: 1619478776:0;git commit -m "parser: implem of the templated method to fill vector from the json file"
+: 1619478784:0;git add src/config/config.cc 
+: 1619478815:0;git commit -m "parser: deserialize objects from the json file"
+: 1619478860:0;paru -S flameshot
+: 1619479056:0;flameshot launcher
+: 1619479072:0;l ~/Pictures
+: 1619479079:0;feh ~/Pictures/credit
+: 1619479109:0;rm ~/Pictures/credit
+: 1619479263:0;flameshot --help
+: 1619479289:0;flameshot gui &
+: 1619479458:0;echo coucou
+: 1619479709:0;cd X11
+: 1619479773:0;cd .config/X11
+: 1619479776:0;vim xinitrc
+: 1619512897:0;make tidy
+: 1619513293:0;paru -S lcov
+: 1619513326:0;paru -S genhtml
+: 1619513495:0;man genhtml
+: 1619513507:0;lcov
+: 1619513550:0;autoreconf
+: 1619513664:0;make report
+: 1619514036:0;make ccheck
+: 1619514114:0;cat coverage.info
+: 1619514137:0;l build-aux
+: 1619514222:0;cd src/Co
+: 1619514225:0;cd src
+: 1619514243:0;cd out
+: 1619514249:0;firefox index.html
+: 1619514417:0;git add src/assistant/assistant.lo src/project/project.lo
+: 1619514429:0;git add .gitignore 
+: 1619514466:0;git commit -m "misc: update Makefile, README and gitignore"
+: 1619514539:0;git commit -m "misc: update gitignore"
+: 1619519551:0;autoreconf -i
+: 1619519621:0;paru -S autoconf-archive
+: 1619519945:0;g++ -std=c++20
+: 1619519954:0;g++ -std=c++20 src/main.cc
+: 1619520121:0;cd /bin
+: 1619520165:0;ln -s /home/loup/Bin/clion-2021.1.1/bin/clion.sh /bin/clion
+: 1619520174:0;sudo ln -s /home/loup/Bin/clion-2021.1.1/bin/clion.sh /bin/clion
+: 1619520562:0;./autogen.sh
+: 1619520708:0;./configure
+: 1619520715:0;./make
+: 1619525361:0;git add src/config/
+: 1619529233:0;man cat
+: 1619529294:0;man touch
+: 1619529347:0;git add src/config/config.hpp
+: 1619529391:0;git commit -m "parser: parse json file accordigly to example file"
+: 1619529403:0;git add README.md
+: 1619529415:0;git commit -m "misc: update README"
+: 1619529429:0;git add src/data/data.hpp
+: 1619529467:0;git commit -m "data: implem class to store data from the parsed Json"
+: 1619529502:0;git commit -m "data: implem class to store data from the parsed Json (forgotten files)"
+: 1619529522:0;git diff --staged Makefile.am
+: 1619529535:0;git restore --stage Makefile.am
+: 1619529540:0;git add -p Makefile.am
+: 1619529644:0;git commit -m "compilation: add data to Makefile"
+: 1619544270:0;man strptime
+: 1619570633:0;git ls-files | wc -l
+: 1619570650:0;l src/scheduler
+: 1619570707:0;git add .gitignore
+: 1619576839:0;make 
+: 1619576900:0;cat Billetterie.csv | wc -l
+: 1619576940:0;cat Assos.csv| wc -l
+: 1619576944:0;cat Assos.csv
+: 1619576959:0;cat Events.csv | wc -l
+: 1619577813:0;git diff src/data/data.cc
+: 1619577842:0;git diff src/data/data.hpp
+: 1619577874:0;git commit -m "data: store group leader name and assistant login"
+: 1619577902:0;git diff src/project/project.cc
+: 1619577916:0;git add src/project/project.cc
+: 1619577945:0;git commit -m "misc: remove useless parenthesis"
+: 1619577964:0;git add -p src/timetable/
+: 1619578054:0;git commit -m "timetable: contains the calendar of a project's defenses for a five days week"
+: 1619578060:0;git ass src/scheduler
+: 1619578170:0;git commit -m "scheduler: assign day and time in a timetable for each group"
+: 1619578234:0;git commit -m "main: get a json file to parse and call scheduler"
+: 1619578285:0;git commit -m "compilation: add data, scheduler and timetable files"
+: 1619581304:0;make ucheck
+: 1619581314:0;make clean
+: 1619581316:0;make check
+: 1619588631:0;./recruitement ~/Downloads/recruitment-yaka-2023-0.9.0-information.json
+: 1619588644:0;cat 
+: 1619588654:0;cat Billetterie.csv
+: 1619589213:0;git diff Makefile.am
+: 1619589221:0;git add src/slot/
+: 1619589247:0;git commit -m "slot: implem for a small period in a day"
+: 1619589252:0;git add src/day/
+: 1619589269:0;git commit -m "day: day unit of the timetable"
+: 1619589294:0;git add src/week/
+: 1619589330:0;git commit -m "week: largest unit in a timetable"
+: 1619589336:0;git add src/timetable/
+: 1619589355:0;git commit -m "timetable: update with the time unit classes"
+: 1619589366:0;git add src/scheduler/
+: 1619589393:0;git diff src/data/
+: 1619589405:0;git add src/data/
+: 1619589417:0;git commit -m "data: remove useless setter"
+: 1619589422:0;git add Makefile.am
+: 1619589498:0;git commit -m "compilation: update Makefile with week, day and slot classes"
+: 1619589512:0;git add src/main.cc
+: 1619589547:0;git commit -m "main: parse json and launch scheduler"
+: 1619589836:0;git tag -a -m "" submission-v1.0
+: 1619589967:0;mkae
+: 1619589981:0;cd Documents/cpp/loup.dallier-recruitment-yaka-2023
+: 1619589983:0;cat Events.csv
+: 1619590495:0;flameshot &
+: 1619591879:0;cd .icons
+: 1619591891:0;l default
+: 1619591896:0;cat default/index.theme
+: 1619591901:0;cd ../.config
+: 1619591912:0;cat gtk-3.0/settings.ini
+: 1619592825:0;fg
+: 1619797937:0;paru -Rns lxappearance
+: 1619798072:0;rm -rf pop-shell
+: 1619798097:0;rm -rf gtk-2.0
+: 1619798115:0;cd autostart
+: 1619798129:0;cd pipewire
+: 1619798133:0;..
+: 1619798356:0;touch index.theme
+: 1619798374:0;vim index.theme
+: 1620076088:0;paru -S brave
+: 1620080273:0;sudo pacman -Qet
+: 1620080300:0;sudo pacman -Qdt
+: 1620080611:0;rm -rf event-sound-cache.tdb.dcfada9f08b4475f9db56ba2c01ff583.x86_64-pc-linux-gnu fontconfig gitstatus gnome-desktop-thumbnailer google-chrome gtk-3.0 mesa_shader_cache p10k-dump-loup.zsh p10k-dump-loup.zsh.zwc p10k-instant-prompt-loup.zsh p10k-instant-prompt-loup.zsh.zwc p10k-loup spotify thumbnails/ vim
+: 1620080694:0;paru -Rns $(paru -Qtdq)
+: 1620080864:0;paru -S gimp
+: 1620080917:0;cat google.com
+: 1620081200:0;feh ~/Downloads/logo_white.png
+: 1620083940:0;cat .Xresources
+: 1620083945:0;vim .Xresources
+: 1620084067:0;cat .icons/default/index.theme
+: 1620084081:0;cd /usr/share/icons/default
+: 1620084084:0;cat index.theme
+: 1620084094:0;sudo vim index.theme
+: 1620084260:0;cd .local/share/icons
+: 1620084268:0;cd Breeze
+: 1620084288:0;cd .icons/default
+: 1620084304:0;cp -r cursors ~/.icons/default
+: 1620084307:0;cd cursors
+: 1620244892:0;paru -Rns chrome-gnome-shell gnome-tweaks
+: 1620245020:0;paru -Rns xdg-desktop-portal
+: 1620245030:0;paru -Rns xdg-desktop-portal-gtk
+: 1620245036:0;paru -Rns gnome
+: 1620245209:0;paru -S plasma
+: 1620245372:0;paru -S sddm
+: 1620245419:0;startx
+: 1620245759:0;paru -S xorg-xinit
+: 1620245774:0;startx .config/X11/xinitrc
+: 1620245852:0;sudo systemctl diable gdm.service
+: 1620245863:0;sudo systemctl disable gdm.service
+: 1620245866:0;sudo systemctl enable sddm.service
+: 1620246424:0;paru -S dolphin
+: 1620246708:0;paru -S intellij-idea-ultimate-edition
+: 1620247392:0;paru -Rns intellij-idea-ultimate-edition
+: 1620247403:0;paru -S intellij-idea-ultimate-edition-jre
+: 1620247624:0;paru -Rns intellij-idea-ultimate-edition-jre
+: 1620247633:0;paccache -ruk0
+: 1620247636:0;paccache -rk1
+: 1620247642:0;paru -Qtdq
+: 1620247757:0;paru -S intellij-idea-ultimate-edition intellij-idea-ultimate-edition-jre
+: 1620425697:0;paru -S kde-applications
+: 1620427055:0;:
+: 1620427070:0;Q:
+: 1620427113:0;paru -Rns kde-applications
+: 1620427297:0;flameshot
+: 1620427305:0;flameshot -h
+: 1620427310:0;flameshot gui
+: 1620595970:0;rm 165371-Breeze.tar.gz
+: 1620685024:0;tar -xvf ~/Downloads/java-2023-javaserialize-provided-files-4.2.7.tar && rm ~/Downloads/java-2023-javaserialize-provided-files-4.2.7.tar
+: 1620685063:0;tar -xvf ~/Downloads/java-2023-javascheduler-provided-files-4.2.7.tar && rm ~/Downloads/java-2023-javascheduler-provided-files-4.2.7.tar
+: 1620685078:0;tar -xvf ~/Downloads/java-2023-javamycat-provided-files-4.2.7.tar && rm ~/Downloads/java-2023-javamycat-provided-files-4.2.7.tar
+: 1620685107:0;tar -xvf ~/Downloads/java-2023-javamyfunctional-provided-files-4.2.7.tar && rm ~/Downloads/java-2023-javamyfunctional-provided-files-4.2.7.tar
+: 1620685143:0;cd serialize
+: 1620685441:0;find -name *Exception* ./
+: 1620685449:0;find -name '*Exception*' ./
+: 1620685466:0;find ./ -name '*Exception*'
+: 1620685498:0;cat throwback/src/main/java/throwback/UnknownException.java
+: 1620685554:0;cat throwback/src/main/java/throwback/IntegerException.java
+: 1620772641:0;kill kde
+: 1620772647:0;man kill
+: 1620773976:0;cd d04
+: 1620773979:0;cd scheduler
+: 1620776222:0;cd ../serialize
+: 1620776233:0;cd ../../loup.dallier-java-2023
+: 1620776247:0;git add serialize/src/main/java/
+: 1620776278:0;git commit -m "serialize: add exercise files"
+: 1620776293:0;git tag -a -m "" exercises-serialize-v1.0
+: 1620855622:0;git add seq/
+: 1620855672:0;git restore --staged seq/src/main/java/seq/ExtendedStream.java
+: 1620855677:0;git restore --staged seq/src/main/java/seq/ExtendedStreamTest.java
+: 1620855690:0;git restore --staged seq/src/test/java/seq/ExtendedStreamTest.java
+: 1620855712:0;git commit -m "seq: add seq class implem"
+: 1620855744:0;git tag -a -m "" exercises-seq-v1.0
+: 1620856018:0;git add seq/src/main/java/seq/
+: 1620856654:0;git commit -m "seq: remove .of in seq class methods"
+: 1620856658:0;git tag -a -m "" exercises-seq-v1.1
+: 1620857079:0;git tag -a -m "" exercises-seq-v1.2
+: 1620858117:0;git add seq/src/
+: 1620858132:0;git commit -m "seq: real push with modif"
+: 1620858136:0;git tag -a -m "" exercises-seq-v1.3
+: 1620858387:0;git add seq
+: 1620858410:0;git commit -m "seq: re-implem .of in seq class"
+: 1620858414:0;git tag -a -m "" exercises-seq-v1.4
+: 1620911865:0;git add seq/src/main/java/
+: 1620911887:0;git commit -m "seq: change class to interface with stream() access"
+: 1620911890:0;git tag -a -m "" exercises-seq-v1.5
+: 1620913174:0;git commit -m "scheduler: add first version of scheduler"
+: 1620913193:0;git tag -a -m "" exercises-scheduler-v1.0
+: 1620932838:0;vim
+: 1620936594:0;git add scheduler/
+: 1620936626:0;git commit -m "scheduler: complete onErrorRecoverWith and andThenWiat"
+: 1620936630:0;git tag -a -m "" exercises-scheduler-v1.1
+: 1620943215:0;paru -S obs-studio
+: 1620944176:0;git commit -m "myFunctional: add all files"
+: 1620944217:0;git tag -a -m "" exercises-my-functional-v1.0
+: 1620944792:0;git commit -m "myFunctional: add non-implemented method in Either and fix fold in FoldableList and methods in Function\
+"
+: 1620944795:0;glog
+: 1620944804:0;git log
+: 1620944814:0;git tag -a -m "" exercises-my-functional-v1.1
+: 1620946541:0;git commit -m "myFunctional: implem for compose and andThen"
+: 1620946548:0;git tag -a -m "" exercises-my-functional-v1.2
+: 1620947190:0;git commit -m "myFunctional: fix identity"
+: 1620947196:0;git tag -a -m "" exercises-my-functional-v1.3
+: 1620947691:0;git add myFunctional/
+: 1620947709:0;git commit -m "myFunctional: implem andThen in Consumer"
+: 1620947713:0;git tag -a -m "" exercises-my-functional-v1.4
+: 1621026624:0;cd Documents/Java/loup.dallier-java-2023
+: 1621026641:0;git diff myFunctional/src/main/java/functional/Consumer.java
+: 1621026657:0;git restore myFunctional/src/main/java/functional/Consumer.java
+: 1621026910:0;git add fgen/src/main/java/fgen/FGen.java
+: 1621026916:0;git ls-files
+: 1621026926:0;qgst
+: 1621026951:0;git restore --staged fgen/src/main/resources/test
+: 1621026985:0;git commit -m "fgen: add class implem"
+: 1621026998:0;git tag -a -m "" exercises-fgen-v1.0
+: 1621028412:0;alias untar
+: 1621028434:0;rm ~/Downloads/java-2023-javamyfunctional-provided-files-4.2.7.tar
+: 1621028438:0;l ~/Downloads
+: 1621028447:0;untar
+: 1621028921:0;cd Documents/Java/loup.dallier-java-2023/fgen
+: 1621028931:0;cd src/main/java/fgen/
+: 1621028937:0;cat FGen.java 
+: 1621030298:0;cat
+: 1621035636:0;rm -rf akonadi_ical_resource_0/ BraveSoftware/ discover event-sound-cache.tdb.dcfada9f08b4475f9db56ba2c01ff583.x86_64-pc-linux-gnu fontconfig gegl-0.4 gimp gitstatus gnome-desktop-thumbnailer google-chrome gstreamer-1.0 gtk-3.0 icon-cache.kcache JetBrains JNA kalgebramobile kded5 kgamerenderer-kmines-themes kinfocenter kio_http krunner kscreenlocker_greet ksmserver-logout-greeter ksplashqml ksycoca5_en_um8yNRsaygFg9zG6CBQ3NnJ8LHc= kwin main.kts.compiled.cache mesa_shader_cache obexd p10k-dump-loup.zsh p10k-dump-loup.zsh.zwc p10k-instant-prompt-loup.zsh p10k-instant-prompt-loup.zsh.zwc p10k-loup paru plasmashell plasma-svgelements plasma_theme_breeze-dark_v5.82.0.kcache plasma_theme_default_v5.81.0.kcache qtshadercache-x86_64-little_endian-lp64 spotify systemsettings thumbnails vim yakuake
+: 1621035649:0;rm -rf appstream/ babl kcmshell5 kontrast
+: 1621078156:0;alias
+: 1621078162:0;update-mirrors
+: 1621079170:0;cat .bashrc
+: 1621079174:0;cat -n .bashrc
+: 1621079189:0;cat -n .zshenv
+: 1621079965:0;git commit -m "myCat: add all files"
+: 1621079981:0;git tag -a -m "" exercises-my-cat-v1.0
+: 1621080099:0;cat .git .gitignore
+: 1621084062:0;git commit -m "myCat: fix several files printing and with both options"
+: 1621084069:0;git tag -a -m "" exercises-my-cat-v1.1
+: 1621084416:0;cat -n computer_shop/computer_shop.iml .gitignore
+: 1621084420:0;cat .gitignore
+: 1621084449:0;git commit -m "myCat: fix newline at the end"
+: 1621084452:0;git tag -a -m "" exercises-my-cat-v1.2
+: 1621084693:0;touch test
+: 1621084698:0;rm test
+: 1621085142:0;git tag -a -m "" exercises-my-cat-v1.3
+: 1621085628:0;git tag -a -m "" exercises-my-cat-v1.4
+: 1621085924:0;git tag -a -m "" exercises-my-cat-v1.5
+: 1621088098:0;cd Documents/Java/loup.dallier-java-2023/
+: 1621088119:0;git tag -a -m "" exercises-my-cat-v1.6
+: 1621088435:0;cd BraveSoftware
+: 1621088460:0;cd Brave-Browser
+: 1621088499:0;cd google-chrome
+: 1621088501:0;cd Default
+: 1621088508:0;cd .config/google-chrome
+: 1621089061:0;vim chrome-flags.conf
+: 1621089157:0;vim brave-flags.conf
+: 1621089881:0;cd myCat
+: 1621089895:0;cat -n src/main/java/myCat/BaseCat.java
+: 1621089920:0;bash
+: 1621100046:0;cat -n src/main/java/myCat/BaseCat.java 
+: 1621100046:0;cat -n src/main/java/myCat/Program.java src/main/java/myCat/BaseCat.java 
+: 1621100046:0;;q
+: 1621090915:0;git tag -a -m "" exercises-my-cat-v1.7
+: 1621090999:0;git tag -a -m "" exercises-my-cat-v1.8
+: 1621091329:0;git tag -a -m "" exercises-my-cat-v1.9
+: 1621091975:0;git add myCat/
+: 1621091978:0;git commit -m "myCat: i don't know anymore"
+: 1621091980:0;git tag -a -m "" exercises-my-cat-v1.10
+: 1621092258:0;git add fgen/
+: 1621092281:0;git commit -m "fgen: throw for path exist in changePath"
+: 1621092289:0;git tag -a -m "" exercises-fgen-v1.1
+: 1621092290:0;gpft
+: 1621259510:0;cd Documents
+: 1621259515:0;cd cpp
+: 1621259575:0;cmake
+: 1621259583:0;cmake --help
+: 1621259692:0;paru -S benchmark
+: 1621259769:0;./benchmark
+: 1621259775:0;./benchmark --color
+: 1621259789:0;./benchmark --color=YES
+: 1621259834:0;cd benchs
+: 1621263314:0;clion
+: 1621263394:0;cd Sources
+: 1621263400:0;cd ../Bin
+: 1621263406:0;rm -rf *
+: 1621263415:0;intellij
+: 1621263417:0;idea
+: 1621263425:0;which idea
+: 1621263441:0;cd .local
+: 1621263450:0;rm clion idea
+: 1621263456:0;../../../
+: 1621263480:0;ls
+: 1621263504:0;l idea
+: 1621263514:0;rm idea
+: 1621263519:0;sudo rm idea
+: 1621263527:0;l clion
+: 1621263533:0;sudo rm clion
+: 1621263655:0;paru -S clion clion-gdb clion-cmake clion-jre clion-lldb
+: 1621342366:0;cd Documents/cpp
+: 1621342397:0;rm -rf .idea cmake-build-debug
+: 1621418970:0;paru -Ss libnotify
+: 1621419160:0;paru -S dunst
+: 1621419177:0;/usr/bin/dunst
+: 1621419435:0;cp /etc/dunst/dunstrc ~/.config/d
+: 1621419448:0;rm d
+: 1621419452:0;mkdir dunst
+: 1621419460:0;cp /etc/dunst/dunstrc ~/.config/dunst/dunstrc
+: 1621419463:0;cd dunst
+: 1621419465:0;cat dunstrc
+: 1621419616:0;touch autostart
+: 1621419629:0;mv autostart autostart.sh
+: 1621419632:0;vim autostart.sh
+: 1621419675:0;chmod 744 autostart.sh
+: 1621419717:0;./autostart.sh
+: 1621419732:0;ok
+: 1621419891:0;cd /usr/share/icons
+: 1621420053:0;cd breeze-dark
+: 1621420089:0;cd ../Adwaita
+: 1621420114:0;cd KDE_Classic
+: 1621420120:0;cd default
+: 1621420124:0;cd ../oxygen
+: 1621420135:0;cd ../Oxygen_Black
+: 1621420263:0;cd usr
+: 1621420267:0;cd bin
+: 1621420276:0;cd share
+: 1621420280:0;cd flameshot
+: 1621420283:0;cd translations
+: 1621420401:0;dunst -h
+: 1621420556:0;dunst -h | grep icon
+: 1621420930:0;dunst -help
+: 1621420957:0;dunst
+: 1621420989:0;dunst -print msg
+: 1621421030:0;dunst &
+: 1621421936:0;cd .config/dunst
+: 1621421941:0;vim dunstrc
+: 1621426761:0;zshconfig
+: 1621426781:0;reload
+: 1621426790:0;paru -Rns brave-bin
+: 1621426882:0;xdg-settings set default-web-browser chrome.desktop
+: 1621426902:0;echo $BROWSER
+: 1621426964:0;which google-chrome-stable
+: 1621427312:0;echo www.google.com
+: 1621427424:0;sudo xdg-settings set default-web-browser google-chrome.desktop
+: 1621427471:0;xdg-settings set default-web-browser google-chrome.desktop
+: 1621427544:0;find / -name "google-chrome.desktop"
+: 1621427570:0;/usr/share/applications/google-chrome.desktop
+: 1621427574:0;sudod /usr/share/applications/google-chrome.desktop
+: 1621427577:0;sudo /usr/share/applications/google-chrome.desktop
+: 1621427587:0;google-chrome-stable
+: 1621427614:0;xdg-settings get default-web-browser
+: 1621427626:0;vim .zshenv
+: 1621427660:0;paru -S brave-bin
+: 1621427706:0;echo https://www.google.com
+: 1621427854:0;paru -Rns ttf-win10
+: 1621427871:0;paru -S ttf-ms-win10
+: 1621428008:0;cd /etc/
+: 1621428011:0;cat fstab
+: 1621428016:0;sudo vim fstab
+: 1621428060:0;cd /
+: 1621428066:0;su -i
+: 1621428068:0;su
+: 1621428410:0;mkdir windows
+: 1621428410:0;cfdisk /dev/nvme0n1p1
+: 1621428410:0;mount /dev/nvme0n1p1 /windows/
+: 1621428410:0;genfstab -U / >> /etc/fstab 
+: 1621428452:0;sudo umount /windows
+: 1621428474:0;sudo mount /dev/nvme0n1p3 /windows
+: 1621428476:0;sudo lsblk
+: 1621428564:0;whoami
+: 1621428573:0;user
+: 1621428575:0;users
+: 1621428597:0;id -u loup
+: 1621428612:0;id loup
+: 1621428776:0;sudo mkdir /usr/share/fonts/WindowsFonts
+: 1621428800:0;sudo cp /windows/Windows/Fonts/* /usr/share/fonts/WindowsFonts
+: 1621428816:0;sudo chmod 644 /usr/share/fonts/WindowsFonts/*
+: 1621428823:0;fc-cache -f
+: 1621457927:0;paru -Rns clion
+: 1621458211:0;paru -S rider
+: 1621458804:0;cd .ca
+: 1621458881:0;rm akonadi_ical_resource_0 appstream BraveSoftware discover dolphin event-sound-cache.tdb.dcfada9f08b4475f9db56ba2c01ff583.x86_64-pc-linux-gnu fontconfig gitstatus gstreamer-1.0 icon-cache.kcache gtk-3.0 JetBrains kded5 khelpcenter kio_http krunner kscreenlocker_greet ksmserver-logout-greeter ksplashqml ksycoca5_en_um8yNRsaygFg9zG6CBQ3NnJ8LHc= kwin
+: 1621458886:0;rm -rf akonadi_ical_resource_0 appstream BraveSoftware discover dolphin event-sound-cache.tdb.dcfada9f08b4475f9db56ba2c01ff583.x86_64-pc-linux-gnu fontconfig gitstatus gstreamer-1.0 icon-cache.kcache gtk-3.0 JetBrains kded5 khelpcenter kio_http krunner kscreenlocker_greet ksmserver-logout-greeter ksplashqml ksycoca5_en_um8yNRsaygFg9zG6CBQ3NnJ8LHc= kwin
+: 1621458955:0;rm -rf JNA main.kts.compiled.cache mesa_shader_cache mozilla obexd p10k-dump-loup.zsh p10k-dump-loup.zsh.zwc p10k-instant-prompt-loup.zsh p10k-instant-prompt-loup.zsh.zwc p10k-loup plasmashell plasma-svgelements plasma-systemmonitor plasma_theme_breeze-dark_v5.82.0.kcache qtshadercache-x86_64-little_endian-lp64 spotify systemsettings thumbnails vim vscode-cpptools 
+: 1621458961:0;rm -rf paru
+: 1621458991:0;rm -rf google-chrome
+: 1621462792:0;doom -h
+: 1621462802:0;doom upgrade
+: 1621462867:0;cat .emacs.d/.local/doom.error.log
+: 1621860888:0;cd ../
+: 1621860944:0;rm -rf CPPA_3
+: 1621860947:0;git clone git@github.com:AloisH/CPPA_3.git
+: 1621860952:0;cd CPPA_3
+: 1621860956:0;cmake -B build
+: 1621867678:0;rm -rf Code
+: 1621876018:0;cat README.md
+: 1621885638:0;cd Documents/cpp/CPPA_3
+: 1621885640:0;git pull
+: 1621885646:0;git status
+: 1621886804:0;cd build
+: 1621886808:0;make
+: 1621886921:0;make bench
+: 1621887009:0;git add benchs/ include/ tests/
+: 1621887062:0;git commit -m "Feature(connectivity): takes connectivity into account"
+: 1621887065:0;git push
+: 1622478000:0;sudo dd if=/dev/zero of=/dev/mmcblk0 bs=4096 status=progress
+: 1622479252:0;parted
+: 1622479376:0;reboot
+: 1622479416:0;sudo parted /dev/mmcblk0 --script -- mklabel msdos
+: 1622479425:0;sudo parted /dev/mmcblk0 --script -- mkpart primary fat32 1MiB 100%
+: 1622479510:0;lsblk
+: 1622479523:0;sudo mkfs.vfat -F32 /dev/mmcblk0p1
+: 1622479577:0;sudo parted /dev/mmcblk0 --script print
+: 1622479653:0;sudo parted /dev/mmcblk0 --script -- mklabel gpt
+: 1622479674:0;sudo parted /dev/mmcblk0 --script -- mkpart primary ext4 0% 100%
+: 1622479686:0;sudo mkfs.ext4 -F /dev/mmcblk0p1
+: 1622480080:0;cd Downloads
+: 1622480084:0;./balenaEtcher-1.5.120-ia32.AppImage
+: 1622480109:0;bash balenaEtcher-1.5.120-ia32.AppImage
+: 1622481065:0;echo $LOCALE
+: 1622481070:0;echo $myip
+: 1622664281:0;paru -S xorg-xkill
+: 1622751771:0;cd Documents/Java
+: 1622756813:0;cd 
+: 1622756954:0;l .m2
+: 1622756981:0;vim .m2/settings.xml
+: 1622757324:0;paru -Qs keyring
+: 1622757358:0;cd .config
+: 1622757370:0;cd code-oss
+: 1622757376:0;cd ../Code\ -\ OSS
+: 1622757391:0;cd CachedExtension
+: 1622757406:0;cd CachedExtensions
+: 1622757417:0;cd ../CachedExtensionVSIXs
+: 1622757434:0;dust
+: 1622757445:0;cd .cache
+: 1622758321:0;cd /windows/Users/loupd/.m2
+: 1622758326:0;vim settings.xml
+: 1622759007:0;cd ../.vscode/extensions
+: 1622760080:0;cd .config/Code\ -\ OSS/
+: 1622760085:0;cd CachedExtensionVSIXs
+: 1622760109:0;l > extensions.txt
+: 1622760127:0;mv extensions.txt /windows/Users/loupd/Desktop
+: 1622760742:0;cd
+: 1622760986:0;cd Pictures/Screenshots
+: 1624898897:0;gst
+: 1624898903:0;cd ..
+: 1624898907:0;rm -rf ping
+: 1624898910:0;git clone git@github.com:AloisH/ping.git
+: 1624898915:0;cd ping
+: 1624901417:0;cd Documents/Java/ping
+: 1624901423:0;gloga
+: 1624901460:0;git checkout -b with-electron
+: 1624901954:0;pm
+: 1624902219:0;i3config
+: 1624902990:0;xkill
+: 1624903030:0;htop
+: 1624903146:0;logout
+: 1626986605:0;sudo vim /etc/pacman.conf
+: 1626986989:0;paru -Syu
+: 1626986996:0;cd /etc
+: 1626986997:0;l
+: 1626987012:0;sudo vim paru.conf
+: 1626987105:0;quit
+: 1626987107:0;q
+: 1626987108:0;:Q
+: 1626987118:0;paru
+: 1626987325:0;sudo ssh pi@192.168.0.50
+: 1626987889:0;ssh pi@192.168.0.50
+: 1626988678:0;ssh pi@85.68.21.209 -p 50
+: 1626988913:0;man rm
+: 1626990370:0;ssh root@85.68.21.209
+: 1626990539:0;ssh pi@dloup.dev
+: 1626991954:0;ssh pi@85.68.21.209
+: 1626992159:0;exit
+: 1626992160:0;who
+: 1626992165:0;:q
+: 1626992173:0;poweroff
+: 1627032031:0;cd .dotfiles
+: 1627032035:0;gst
+: 1627032042:0;git diff alacritty/alacritty.yml
+: 1627032050:0;git add alacritty/alacritty.yml
+: 1627032057:0;git diff .zshenv
+: 1627032064:0;git add .zshenv
+: 1627032070:0;git diff zsh/
+: 1627032120:0;git diff zsh/.zprofile
+: 1627032138:0;cat zsh/.zprofile
+: 1627032160:0;pgrep
+: 1627032165:0;pgrep i3
+: 1627032178:0;pgrep kdeinit5
+: 1627032205:0;git add zsh/.zprofile
+: 1627032207:0;gst
+: 1627032215:0;git diff zsh/.zshrc
+: 1627032240:0;git add zsh/.zshrc
+: 1627032243:0;gst
+: 1627032249:0;cat zsh/.zshrc
+: 1627032269:0;gst
+: 1627032279:0;git add zsh/zsh_history

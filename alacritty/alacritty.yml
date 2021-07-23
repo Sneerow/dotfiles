@@ -358,7 +358,7 @@ schemes:
       cyan:    '#34E2E2'
       white:   '#EEEEEC'
 
-colors: *cyberpunk
+colors: *nord
 
 # Bell
 #

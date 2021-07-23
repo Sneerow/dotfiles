@@ -11,7 +11,7 @@
 
 exec_always --no-startup-id picom -bc --config ~/.config/picom.conf &
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 gaps inner 10
 
 set $mod Mod4
@@ -188,4 +188,5 @@ bar {
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 exec_always --no-startup-id feh --no-fehbg --bg-scale ~/.config/i3/.wallpaper/lord-in-the-forrest.jpg &
-#exec --no-startup-id autorandr -c
+
+bindsym $mod+Shift+s exec flameshot gui

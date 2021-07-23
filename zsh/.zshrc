@@ -13,7 +13,7 @@ export ZSH="/home/loup/.oh-my-zsh"
 
 graphviz="/home/loup/.local/lib/python3.9/site-package/graphviz"
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/loup/.local/bin:$graphviz:/home/loup/.emacs.d/bin"
+export PATH="/home/loup/.local/bin:$graphviz:/home/loup/.emacs.d/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -44,7 +44,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -99,6 +99,8 @@ alias ':q'='exit'
 alias pm='pulsemixer'
 alias dust='dust -r'
 alias update-mirrors='sudo reflector -c France --latest 100 -a 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist; sudo pacman -Syyy'
+alias untar='tar -xvf ~/Downloads/*.tar && rm ~/Downloads/*.tar'
+alias gpft='git push --follow-tags'
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

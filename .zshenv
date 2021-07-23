@@ -16,7 +16,7 @@ export VIMDOTDIR=$XDG_CONFIG_HOME/vim
 export VIMINIT="source $VIMDOTDIR/vimrc"
 
 # Common apps
-export BROWSER=firefox
+export BROWSER=google-chrome-stable
 export EDITOR=vim
 export VISUAL=$EDITOR
 export PAGER=most
