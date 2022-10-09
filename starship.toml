@@ -1,0 +1,9 @@
+# Invite Options
+#command_timeout = 10000
+
+[python]
+pyenv_version_name = true
+
+[time]
+disabled = false
+format = '🕙 [$time]($style) '

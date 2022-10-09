@@ -1,6 +1,13 @@
-
 [user]
-	name = Loup Dallier
 	email = loup.dallier@epita.fr
+	name = Loup Dallier
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
+[sequence]
+	editor = "code --wait"
 [pull]
-	rebase = false
+	rebase = true
+[alias]
+	tree = log --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d%C(reset) %s%x09 %C(magenta blink bold)<%an>%C(reset) %C(blue)(%cr)%C(reset) %C(cyan dim)%ad%C(reset)' --graph --all
