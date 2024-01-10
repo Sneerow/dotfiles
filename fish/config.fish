@@ -1,24 +1,15 @@
+__git.init
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
-
-    # Init Starship prompt
     starship init fish | source
-
-    # Autostart zellij
-    if set -q ZELLIJ; or set -q TERM_PROGRAM
-    else 
-        zellij
-    end
 end
 
-# tabtab source for packages
-# uninstall by removing these lines
-# [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
+pyenv init - | source
 
-eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/loupdallier/google-cloud-sdk/path.fish.inc' ]; . '/Users/loupdallier/google-cloud-sdk/path.fish.inc'; end
 
-rvm default
-
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
-
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
