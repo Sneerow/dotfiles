@@ -8,4 +8,3 @@ ln -st ~/.config/ ~/.dotfiles/git/
 ln -st ~/.config/ ~/.dotfiles/pypoetry/
 # ln -st ~/.config/ ~/.dotfiles/vim/
 ln -st ~/.config/ ~/.dotfiles/starship.toml
-ln -st ~/.config/ ~/.dotfiles/zellij/

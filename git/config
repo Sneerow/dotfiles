@@ -1,13 +1,31 @@
 [user]
-	email = loup.dallier@epita.fr
-	name = Loup Dallier
+	email = loup.dallier@matters.tech
+	name= Loup Dallier
 [init]
 	defaultBranch = main
 [core]
 	editor = vim
+	pager = delta
 [sequence]
 	editor = "code --wait"
 [pull]
 	rebase = true
 [alias]
-	tree = log --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d%C(reset) %s%x09 %C(magenta blink bold)<%an>%C(reset) %C(blue)(%cr)%C(reset) %C(cyan dim)%ad%C(reset)' --graph --all
+	tree = log --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d%C(reset) %s%x09 %C(magenta bold)<%an>%C(reset) %C(blue)(%cr)%C(reset) %C(cyan dim)%ad%C(reset)' --graph --all
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	side-by-side = true
+	line-number = true
+	navigate = true
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
+[diff "lockb"]
+	textconv = bun
+	binary = true
+[push]
+	autoSetupRemote = true
+[rerere]
+	enabled = true

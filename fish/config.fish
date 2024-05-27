@@ -13,3 +13,5 @@ if [ -f '/Users/loupdallier/google-cloud-sdk/path.fish.inc' ]; . '/Users/loupdal
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+export GITLAB_REGISTRY_TOKEN=glpat-jCZ1icYzjFR-xKi3mY1x
