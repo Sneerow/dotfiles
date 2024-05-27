@@ -1,4 +1,3 @@
-function ls --wraps='exa --icons' --description 'alias ls exa --icons --sort type'
-  exa --all --icons --header --git --sort type $argv
-        
+function ls --wraps='eza --icons' --description 'alias ls eza --icons --sort type'
+  eza --all --icons --header --git --sort type $argv
 end
