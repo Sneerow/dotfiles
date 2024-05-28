@@ -1,35 +1,50 @@
 [user]
-	email = loup.dallier@matters.tech
-	name= Loup Dallier
+  email = loup.dallier@epita.fr
+  name = Loup Dallier
+
 [init]
 	defaultBranch = main
+
 [core]
 	editor = vim
 	pager = delta
+
 [sequence]
 	editor = "code --wait"
+
 [pull]
 	rebase = true
+
 [alias]
 	tree = log --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d%C(reset) %s%x09 %C(magenta bold)<%an>%C(reset) %C(blue)(%cr)%C(reset) %C(cyan dim)%ad%C(reset)' --graph --all
+
 [interactive]
 	diffFilter = delta --color-only
+
 [delta]
 	side-by-side = true
 	line-number = true
 	navigate = true
   features = catppuccin-mocha
+
 [merge]
 	conflictstyle = diff3
+
 [diff]
 	colorMoved = default
+
 [diff "lockb"]
 	textconv = bun
 	binary = true
+
 [push]
 	autoSetupRemote = true
+
 [rerere]
 	enabled = true
+
+[includeIf "gitdir:~/Documents/work/"]
+	path = ./config-work
 
 [include]
 	path = ~/.dotfiles/git/delta-themes/catppuccin.gitconfig
