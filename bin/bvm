@@ -2,61 +2,89 @@
 
 set -e
 
-version=''
-if [ $# = 0 ]
+if [[ ! $1 =~ ^[0-9]+.[0-9]+.[0-9]+$ ]]
 then
-  # Get the version from package.json if defined
-  if [ -f ./package.json ]
-  then
-    package_json_version=$(cat ./package.json | jq -r '.packageManager' | grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+")
+  printf "Invalid version format\n"
+  exit 1
+fi
 
-    if [ ! package_json_version = '' ]
-    then
-      version="v$package_json_version"
-    fi
+wanted_version=$1
+current_version=$(bun -v 2> /dev/null || printf 'no-version')
 
-  # Get the version from .bvmrc if file exists
-  elif [ -f ./.bvmrc ]
-  then
-    version="$(cat ./.bvmrc)"
+if [[ $wanted_version == $current_version ]]
+then
+  printf "Version already set !\n"
+fi
 
-  # Else default to the latest available version
-  else
-    version=$(curl -fsSL 'https://api.github.com/repos/oven-sh/bun/releases/latest' | jq -r '.name')
-  fi
+if [[ $current_version != 'no-version' ]]
+then
+  brew unlink bun@$current_version
+fi
 
+existing_version=$(brew list | grep -o "bun@$wanted_version")
+printf $existing_version
+if [ -n $existing_version ]
+then
+  brew link bun@$wanted_version
 else
-  # If a specific version is passed as first argument, we can use it
-  version=$1
-  # TODO test match against released bun versions
+  brew install bun@$wanted_version
 fi
 
-# Format the obtained bun version if matching the defined regex, else just set it to $version
-formatted_version=$(printf "$version" | grep -o "v[0-9]\+\.[0-9]\+\.[0-9]\+" || printf "$version")
-
-BUN_INSTALLS="$HOME/.bvm"
-# Create the `.bun-installs` folder if it does not exist
-if [ ! -d $BUN_INSTALLS ]
-then
-  mkdir $BUN_INSTALLS
-fi
-
-# Only install dowload and install a version if it is not already installed
-if [ ! -d $BUN_INSTALLS/$formatted_version ]
-then
-  printf "Installing bun $formatted_version...\n"
-  install_script=$(curl -fsSL 'https://bun.sh/install')
-  modified_install_script=$(printf "$install_script" | sed "s/\${!install_env:-\$HOME\/.bun}/\$HOME\/.bvm\/$formatted_version/")
-
-  bash <<EOF -s -- "bun-$formatted_version"
-  $modified_install_script
-EOF
-else
-  printf "Version $formatted_version already installed !\n"
-fi
-
-# Set the alias to bun binary to use the chosen version
-rm $HOME/.bun/bin/bun
-ln -s $BUN_INSTALLS/$formatted_version/bin/bun $HOME/.bun/bin/bun
-printf "Linked bun to version $formatted_version !\n"
+# version=''
+# if [ $# = 0 ]
+# then
+#   # Get the version from package.json if defined
+#   if [ -f ./package.json ]
+#   then
+#     package_json_version=$(cat ./package.json | jq -r '.packageManager' | grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+")
+#
+#     if [ ! package_json_version = '' ]
+#     then
+#       version="v$package_json_version"
+#     fi
+#
+#   # Get the version from .bvmrc if file exists
+#   elif [ -f ./.bvmrc ]
+#   then
+#     version="$(cat ./.bvmrc)"
+#
+#   # Else default to the latest available version
+#   else
+#     version=$(curl -fsSL 'https://api.github.com/repos/oven-sh/bun/releases/latest' | jq -r '.name')
+#   fi
+#
+# else
+#   # If a specific version is passed as first argument, we can use it
+#   version=$1
+#   # TODO test match against released bun versions
+# fi
+#
+# # Format the obtained bun version if matching the defined regex, else just set it to $version
+# formatted_version=$(printf "$version" | grep -o "v[0-9]\+\.[0-9]\+\.[0-9]\+" || printf "$version")
+#
+# BUN_INSTALLS="$HOME/.bvm"
+# # Create the `.bun-installs` folder if it does not exist
+# if [ ! -d $BUN_INSTALLS ]
+# then
+#   mkdir $BUN_INSTALLS
+# fi
+#
+# # Only install dowload and install a version if it is not already installed
+# if [ ! -d $BUN_INSTALLS/$formatted_version ]
+# then
+#   printf "Installing bun $formatted_version...\n"
+#   install_script=$(curl -fsSL 'https://bun.sh/install')
+#   modified_install_script=$(printf "$install_script" | sed "s/\${!install_env:-\$HOME\/.bun}/\$HOME\/.bvm\/$formatted_version/")
+#
+#   bash <<EOF -s -- "bun-$formatted_version"
+#   $modified_install_script
+# EOF
+# else
+#   printf "Version $formatted_version already installed !\n"
+# fi
+#
+# # Set the alias to bun binary to use the chosen version
+# rm $HOME/.bun/bin/bun
+# ln -s $BUN_INSTALLS/$formatted_version/bin/bun $HOME/.bun/bin/bun
+# printf "Linked bun to version $formatted_version !\n"
 
