@@ -1,0 +1,4 @@
+# Run `bat cache --build` to make it detect the theme
+--theme="Catppuccin Mocha"
+
+--paging=never
