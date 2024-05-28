@@ -18,6 +18,7 @@
 	side-by-side = true
 	line-number = true
 	navigate = true
+  features = catppuccin-mocha
 [merge]
 	conflictstyle = diff3
 [diff]
@@ -29,3 +30,7 @@
 	autoSetupRemote = true
 [rerere]
 	enabled = true
+
+[include]
+	path = ~/.dotfiles/git/delta-themes/catppuccin.gitconfig
+
