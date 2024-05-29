@@ -2,12 +2,12 @@
 
 # TODO add a function to automate link creation
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv 2> /dev/null)" || eval "$(/usr/local/bin/brew shellenv)"
 
 ln -s ~/.dotfiles/fish ~/.config/fish
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-nvm install --lts
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# nvm install --lts
 
 ln -s ~/.dotfiles/nvim ~/.config/nvim
 ln -s ~/.dotfiles/git ~/.config/git
