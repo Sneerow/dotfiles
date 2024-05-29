@@ -16,9 +16,8 @@ brew "lazydocker"
 brew "neovim"
 brew "pyenv"
 brew "starship"
-brew "oven-sh/bun/bun@1.0.35"
-brew "oven-sh/bun/bun@1.1.10", link: false
-brew "oven-sh/bun/bun@1.1.9", link: false
+brew "bun"
+brew "ripgrep"
 
 cask "1password"
 cask "alt-tab"
