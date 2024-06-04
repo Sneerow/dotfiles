@@ -2,6 +2,13 @@
 
 # TODO add a function to automate link creation
 
+if [ -d ~/.config ]
+then
+  rm -rf ~/.config
+fi
+
+mkdir ~/.config
+
 eval "$(/opt/homebrew/bin/brew shellenv 2> /dev/null)" || eval "$(/usr/local/bin/brew shellenv)"
 
 ln -s ~/.dotfiles/fish ~/.config/fish
