@@ -1,6 +1,6 @@
 #! /bin/bash
 
-set -e
+# set -e
 
 if [[ ! $1 =~ ^[0-9]+.[0-9]+.[0-9]+$ ]]
 then
@@ -8,26 +8,36 @@ then
   exit 1
 fi
 
-wanted_version=$1
+target_version=$1
 current_version=$(bun -v 2> /dev/null || printf 'no-version')
 
-if [[ $wanted_version == $current_version ]]
+printf "Target version: $target_version, current version: $current_version\n"
+
+if [[ $target_version == $current_version ]]
 then
   printf "Version already set !\n"
+  exit 0
 fi
+
+printf "Setting wanted version\n"
 
 if [[ $current_version != 'no-version' ]]
 then
+  printf "Unlink $current_version\n"
   brew unlink bun@$current_version
 fi
 
-existing_version=$(brew list | grep -o "bun@$wanted_version")
-printf $existing_version
-if [ -n $existing_version ]
+formula_name="bun@$target_version"
+printf "Formula name: $formula_name\n"
+
+existing_version=$(brew list | grep -o $formula_name 2> /dev/null)
+printf "Existing version: $existing_version\n"
+
+if [[ ${#existing_version} > 0 ]]
 then
-  brew link bun@$wanted_version
+  brew link bun@$target_version
 else
-  brew install bun@$wanted_version
+  brew install bun@$target_version
 fi
 
 # version=''
