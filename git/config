@@ -17,6 +17,7 @@
 
 [alias]
 	tree = log --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d%C(reset) %s%x09 %C(magenta bold)<%an>%C(reset) %C(blue)(%cr)%C(reset) %C(cyan dim)%ad%C(reset)' --graph --all
+  undo = reset head~
 
 [interactive]
 	diffFilter = delta --color-only
