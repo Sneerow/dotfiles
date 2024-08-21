@@ -18,6 +18,7 @@
 [alias]
 	tree = log --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d%C(reset) %s%x09 %C(magenta bold)<%an>%C(reset) %C(blue)(%cr)%C(reset) %C(cyan dim)%ad%C(reset)' --graph --all
   undo = reset head~
+  lg = log --pretty='%C(red)%h%Creset%C(yellow)%d%Creset %s %C(cyan) (%ar)%Creset'
 
 [interactive]
 	diffFilter = delta --color-only
@@ -50,3 +51,5 @@
 [include]
 	path = ~/.dotfiles/git/delta-themes/catppuccin.gitconfig
 
+[rebase]
+  autosquash = true
