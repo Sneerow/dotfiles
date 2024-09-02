@@ -2,12 +2,18 @@
   email = loup.dallier@epita.fr
   name = Loup Dallier
 
+[includeIf "gitdir:~/Documents/work/"]
+	path = ./config-work
+
 [init]
 	defaultBranch = main
 
 [core]
 	editor = vim
 	pager = delta
+
+[include]
+	path = ~/.dotfiles/git/delta-themes/catppuccin.gitconfig
 
 [sequence]
 	editor = "code --wait"
@@ -44,12 +50,6 @@
 
 [rerere]
 	enabled = true
-
-[includeIf "gitdir:~/Documents/work/"]
-	path = ./config-work
-
-[include]
-	path = ~/.dotfiles/git/delta-themes/catppuccin.gitconfig
 
 [rebase]
   autosquash = true
