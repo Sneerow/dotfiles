@@ -1,6 +1,6 @@
 [user]
-	email = loup.dallier@matters.tech
-	name = Loup Dallier
+  email = loup.dallier@matters.tech
+  name = Loup Dallier
 
 [core]
-	isWork = true
+  isWork = true
