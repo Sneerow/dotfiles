@@ -3,53 +3,53 @@
   name = Loup Dallier
 
 [includeIf "gitdir:~/Documents/work/"]
-	path = ./config-work
+  path = ./config-work
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
 
 [core]
-	editor = vim
-	pager = delta
+  editor = vim
+  pager = delta
 
 [include]
-	path = ~/.dotfiles/git/delta-themes/catppuccin.gitconfig
+  path = ~/.dotfiles/git/delta-themes/catppuccin.gitconfig
 
 [sequence]
-	editor = "code --wait"
+  editor = "code --wait"
 
 [pull]
-	rebase = true
+  rebase = true
 
 [alias]
-	tree = log --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d%C(reset) %s%x09 %C(magenta bold)<%an>%C(reset) %C(blue)(%cr)%C(reset) %C(cyan dim)%ad%C(reset)' --graph --all
+  tree = log --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d%C(reset) %s%x09 %C(magenta bold)<%an>%C(reset) %C(blue)(%cr)%C(reset) %C(cyan dim)%ad%C(reset)' --graph --all
   undo = reset head~
   lg = log --pretty='%C(red)%h%Creset%C(yellow)%d%Creset %s %C(cyan) (%ar)%Creset'
 
 [interactive]
-	diffFilter = delta --color-only
+  diffFilter = delta --color-only
 
 [delta]
-	side-by-side = true
-	line-number = true
-	navigate = true
+  side-by-side = true
+  line-number = true
+  navigate = true
   features = catppuccin-mocha
 
 [merge]
-	conflictstyle = diff3
+  conflictstyle = diff3
 
 [diff]
-	colorMoved = default
+  colorMoved = default
 
 [diff "lockb"]
-	textconv = bun
-	binary = true
+  textconv = bun
+  binary = true
 
 [push]
-	autoSetupRemote = true
+  autoSetupRemote = true
 
 [rerere]
-	enabled = true
+  enabled = true
 
 [rebase]
   autosquash = true
